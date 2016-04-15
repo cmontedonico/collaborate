@@ -105,10 +105,11 @@
 
 			<ul id="main-nav" class="main-nav all-caps">
 				<li class="current"><a href="#hero">Home</a></li>
-				<li><a href="#what-we-do">Que&eacute; hace Winnik</a></li>
+				<li><a href="#top-client">Qu&eacute; hace Wiinik</a></li>
 				<li><a href="#our-features">Beneficios</a></li>
-				<li><a href="#pricing">Vista de empresa y empleado</a></li>
-				<li><a href="#our-team">Contadores</a></li>
+   				<li><a href="#por_que">Por qu&eacute; Wiinik</a></li>
+				<li><a href="#vistas">Vista de empresa y empleado</a></li>
+				<li><a href="#contadores">Contadores</a></li>
 <!--				<li><a href="#customer-story">Customers</a></li>
 			<!--	<li class="dropdown">
 					<a class="external" href="#0">
@@ -328,37 +329,37 @@
 						<!-- BEGIN 1st Row Features -->
 						<div class="the-feature col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-gears"></span>
 
 								<h4 class="feature-title">N&oacute;mina</h4>
 
 								<p>C&aacute;lculo de n&oacute;mina, generaci&oacute;n de l&iacute;neas de pago, dispersi&oacute;n.</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 
 						<div class="the-feature col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-trophy3"></span>
 
 								<h4 class="feature-title">Cumplimiento con la ley</h4>
 
 								<p>Tus contratos en orden, tus impuestos al d&iacute;a, evita multas del IMSS (gesti&oacute;n con IDSE, SUA).</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 
 						<div class="the-feature col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-lightbulb"></span>
 
 								<h4 class="feature-title">Administraci&oacute;n</h4>
 
 								<p>Aprobaci&oacute;n de solicitudes de empleados, data organizacional, inteligencia de negocios.</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 						<!--/ END 1st Row Features -->
@@ -367,37 +368,37 @@
 						<!-- BEGIN 2nd Row Features -->
 						<div class="the-feature zero-bottom col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-mobile4"></span>
 
 								<h4 class="feature-title">Captura de incidencias</h4>
 
 								<p>Recolecci&oacute;n de incidencias – faltas, incapacidades, vacaciones, primas dominicales, bonos.</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 
 						<div class="the-feature zero-bottom col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-adjustments"></span>
 
 								<h4 class="feature-title">Beneficios de terceros (pr&oacute;ximamente)</h4>
 
 								<p>Seguros, préstamos, cursos.</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 
 						<div class="the-feature zero-bottom col-lg-4 col-md-4 col-sm-6">
 
-							<a href="#0">
+							
 								<span class="feature-icon icon-browser2"></span>
 
 								<h4 class="feature-title">Talento (pr&oacute;ximamente)</h4>
 
 								<p>Reclutamiento, onboarding, offboarding.</p>
-							</a>
+							
 
 						</div> <!--/ .the-feature -->
 						<!--/ END 2nd Row Features -->
@@ -544,7 +545,7 @@
 			== BEGIN vistas SECTION ==
 			=======================
 			-->
-			<section id="tab-section" class="gray-bg">
+			<section id="vistas" class="gray-bg">
 
 				<div class="container">
 					<div class="row">
@@ -1198,7 +1199,22 @@
 
 		<!-- Expandable Navigation Menu -->
 		<script src="js/minified/expandableNav.min.js"></script>
-
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+	</script> 
 
 	</body>
 </html>

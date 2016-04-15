@@ -1746,7 +1746,8 @@ a.menu-toggle span {
 /* 3.3 Hero Background */
 .hero-subscribe-layout #hero,
 .creative-layout #hero {
-	background: url(../images/stocks/stock.jpg) no-repeat center center fixed;
+	background: url(../images/stocks/bg-home.gif) no-repeat center center fixed;
+	background-size: cover;
 }
 
 .hero-form-layout #hero {
@@ -2177,7 +2178,7 @@ a.scroll-link:hover {
 	padding-top: 30px;
 }
 /* -- */
-
+/*
 #what-we-do:before {
 	position: absolute;
 	top: 10px;
@@ -2197,7 +2198,7 @@ a.scroll-link:hover {
 	background: url(../images/mockup/paper-mockup.png) no-repeat;
 	content: "";
 }
-
+*/
 .hero-form-layout #what-we-do:before,
 .hero-form-layout #what-we-do:after {
 	bottom: -11em;
@@ -2354,14 +2355,14 @@ ul.how-it-works-col li:last-child:hover {
 	-moz-border-radius: 8px;
 	border-radius: 8px;
 }
-
+/*
 .the-feature:hover {
 	background: #f7f8f9;
 }
-
+*/
 .feature-icon {
 	color: #777;
-	font-size: 30px;
+	font-size: 50px;
 }
 
 .feature-title {
@@ -2504,11 +2505,38 @@ ul.how-it-works-col li:last-child:hover {
   */
 
 #breakout {
-	background: url(../images/stocks/stock3.jpg) no-repeat center center;
+	background: url(../images/stocks/hm_rev_bg_1.jpg) no-repeat center center;
 	background-size: cover !important;
 }
 
 #breakout .breaking-content {
+	padding: 74px 0;
+}
+
+#contadores{
+	background: url(../images/stocks/team2.jpg) no-repeat center center;
+	background-size: cover !important;
+}
+
+#contadores .breaking-content {
+	padding: 74px 0;
+}
+
+#que_hace{
+	background: url(../images/stocks/bg-rh1.jpg) no-repeat center center;
+	background-size: cover !important;
+}
+
+#que_hace .breaking-content {
+	padding: 74px 0;
+}
+
+#benefits{
+	background: url(../images/stocks/bg-time.jpg) no-repeat center center;
+	background-size: cover !important;
+}
+
+#benefits .breaking-content {
 	padding: 74px 0;
 }
 
@@ -2899,14 +2927,14 @@ ul.customer-logos .vertical-center-content {
 	position: absolute;
 	top: 14%;
 	padding: 0 30px;
-	opacity: 1;
+	opacity: 0;
 }
 
 .customer-quote:before {
 	display: block;
 	margin-bottom: 18px;
 	color: #222;
-	
+	content: "\e977";
 	font-size: 18px;
 	font-family: "Icomoon";
 }
@@ -2916,7 +2944,7 @@ ul.customer-logos .vertical-center-content {
 }
 
 .customer-quote small {
-
+	font-style: italic;
 	font-size: 13px;
 	line-height: 20px;
 }

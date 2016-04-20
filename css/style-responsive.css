@@ -533,6 +533,9 @@
 }
 
 @media (max-width: 738px) {
+	#por_que_wiinik .feature-icon{
+		display:none;
+	}
 	/* BASIC STRUCTURE */
 	h1, h2, h3, h4, h5, h6 {
 		line-height: 1.25em;

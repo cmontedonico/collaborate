@@ -1,24 +1,27 @@
 <?php
-$subject = $_REQUEST['subject'] . ' Urip Landing Page : Demo'; // Subject of your email
-$to = 'your@address.com';  //Recipient's or Your E-mail
+$servername = "localhost";
+$username = "wiinik";
+$password = "288h8i";
+$database = "wiinik_landing";
 
-$headers  = 'MIME-Version: 1.0' . "\r\n";
-$headers .= "From: " . $_REQUEST['email'] . "\r\n"; // Sender's E-mail
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$name = $_POST['name'];
+$email = $_POST['email'];
+$company = $_POST['company'];
+$position = $_POST['position'];
+$phone = $_POST['phone'];
 
-$message .= 'First Name: ' . $_REQUEST['fname'] . "<br>";
-$message .= 'Last Name: ' . $_REQUEST['lname'] . "<br>";
-$message .= 'Subject: ' . $_REQUEST['subject'] . "<br><br><br>";
-$message .= $_REQUEST['message'];
 
-if (@mail($to, $subject, $message, $headers))
-{
-	// Transfer the value 'sent' to ajax function for showing success message.
-	echo 'sent';
-}
-else
-{
-	// Transfer the value 'failed' to ajax function for showing error message.
-	echo 'failed';
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $database);
+// Check connection
+if ($conn->connect_errno) {
+    die("Connection failed: " . $conn->connect_errno);
+} 
+
+if (!$conn->query("insert into registro_wiinik (name, email, company, position, phone) values ('" . $name . "','" . $email . "','" . $company . "','". $position ."','" . $phone . "')")){
+	echo "Query failed: (" . $conn->errno . ") " . $conn->error;
+}else{
+	echo "si";
 }
 ?>

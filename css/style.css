@@ -87,6 +87,33 @@
  * 1.0 BASIC STRUCTURE
  * -----------------------------------------------------------------------------
  */
+
+#top-client .the-logo{
+	opacity: .5;
+}
+
+#top-client .the-logo:hover{
+	opacity: 1;
+}
+
+#contadores_desc .the-feature a{
+	border: #ccc 2px solid;
+    border-radius: 30px;
+    padding: 10px;
+    min-height: 300px;
+}
+
+#por_que_wiinik .the-feature .feature-icon{
+	position: absolute;
+    left: -10px;
+    top: 34px;
+    font-size: 50px;
+    color: #fff;
+    background-color: cadetblue;
+    border-radius: 50%;
+    padding: 5px;
+}
+
 body {
 	background: #fff;
 	color: #777;
@@ -1153,7 +1180,7 @@ a.overlay-close:hover {
 }
 
 .contact-form {
-	margin: 50px 0;
+	margin: 10px 0;
 }
 
 .contact-form .contact-input,
@@ -1746,7 +1773,7 @@ a.menu-toggle span {
 /* 3.3 Hero Background */
 .hero-subscribe-layout #hero,
 .creative-layout #hero {
-	background: url(../images/stocks/bg-home.gif) no-repeat center center fixed;
+	background: url(../images/stocks/team-photo-1-dark.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -2159,6 +2186,10 @@ a.scroll-link:hover {
 	padding-top: 25px;
 }
 
+.client-logo img {
+	width: 50%;
+}
+
 .the-logo {
 
 }
@@ -2510,7 +2541,7 @@ ul.how-it-works-col li:last-child:hover {
 }
 
 #breakout .breaking-content {
-	padding: 74px 0;
+	padding: 120px 0;
 }
 
 #contadores{
@@ -2519,7 +2550,7 @@ ul.how-it-works-col li:last-child:hover {
 }
 
 #contadores .breaking-content {
-	padding: 74px 0;
+	padding: 120px 0;
 }
 
 #que_hace{
@@ -2528,16 +2559,16 @@ ul.how-it-works-col li:last-child:hover {
 }
 
 #que_hace .breaking-content {
-	padding: 74px 0;
+	padding: 120px 0;
 }
 
 #benefits{
-	background: url(../images/stocks/bg-time.jpg) no-repeat center center;
+	background: url(../images/stocks/empleados-felices1.png) no-repeat center center;
 	background-size: cover !important;
 }
 
 #benefits .breaking-content {
-	padding: 74px 0;
+	padding: 120px 0;
 }
 
 /* 10.1 App Layout Breakout */

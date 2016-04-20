@@ -341,17 +341,18 @@ $(document).ready(function(){
 
         // Variable declaration
         var error = false;
-        var fname = $('#fname').val();
+        var name = $('#name').val();
         var email = $('#email').val();
-        var subject = $('#subject').val();
-        var message = $('#message').val();
+        var company = $('#company').val();
+        var phone = $('#phone').val();
+        var position = $('#position').val();
 
      	// Form field validation
-        if(fname.length == 0){
+        if(name.length == 0){
             var error = true;
-            $('#fname').parent('div').addClass('field-error');
+            $('#name').parent('div').addClass('field-error');
         }else{
-            $('#fname').parent('div').removeClass('field-error');
+            $('#name').parent('div').removeClass('field-error');
         }
         if(email.length == 0 || email.indexOf('@') == '-1'){
             var error = true;
@@ -359,17 +360,23 @@ $(document).ready(function(){
         }else{
             $('#email').parent('div').removeClass('field-error');
         }
-        if(subject.length == 0){
+        if(company.length == 0){
             var error = true;
-            $('#subject').parent('div').addClass('field-error');
+            $('#company').parent('div').addClass('field-error');
         }else{
-            $('#subject').parent('div').removeClass('field-error');
+            $('#company').parent('div').removeClass('field-error');
         }
-        if(message.length == 0){
+        if(phone.length == 0){
             var error = true;
-            $('#message').parent('div').addClass('field-error');
+            $('#phone').parent('div').addClass('field-error');
         }else{
-            $('#message').parent('div').removeClass('field-error');
+            $('#phone').parent('div').removeClass('field-error');
+        }
+        if(position == 0){
+            var error = true;
+            $('#position').parent('div').addClass('field-error');
+        }else{
+            $('#position').parent('div').removeClass('field-error');
         }
 
         if(error == true){
@@ -377,12 +384,15 @@ $(document).ready(function(){
         }else{
            $('#error-notification').removeClass('show-up');
         }
-
+		
+		
         if(error == false){
             $.post("contact.php", $("#contact-form").serialize(),function(result){
-                if(result == 'sent'){
+                if(result == 'si'){
                     $('#success-notification').addClass('show-up');
                     $('.submit-btn').addClass('disabled');
+                }else{
+                	console.log("noooooo: "+result);
                 }
             });
         }

@@ -1087,11 +1087,15 @@
     });
     
     function clickAn(an) {
-		if(an=='benefitsAn'){
-		//meter GA	
+		if(an=='benefitsAn'){		
+		ga('send', 'event', 'General', 'Click', 'Click on Aprende Mas', {
+				  nonInteraction: true
+				  });	
 		}
 		if(an=='link_conta'){
-			//meter GA
+			ga('send', 'event', 'Contadores', 'Click', 'Click on contadores label', {
+				  nonInteraction: true
+				  });
 		}
 	   $('#'+an).click();
 	}
@@ -1109,7 +1113,10 @@
     		$("#btnSliderEmpleado").addClass("cta-stroke");
     		$("#btnSliderEmpleador").addClass("cta-default");*/
 			
-			//meter GA
+			
+			ga('send', 'event', 'Views', 'Click1', 'Click on employer view', {
+				  nonInteraction: true
+				  });
     	}
     	
     	if(type == 2){
@@ -1118,21 +1125,24 @@
     		$("#divSliderEmpleador").hide();
     		$("#btnSliderEmpleador").removeClass("cta-default");
     		$("#btnSliderEmpleador").addClass("cta-stroke");
-    		$("#btnSliderEmpleado").addClass("cta-default");*/
+    		$("#btnSliderEmpleado").addClass("cta-default");*/	
 			
-			//meter GA
-    	}
-    	
-    	
-    }
-	
+			ga('send', 'event', 'Views', 'Click2', 'Click on employee view', {
+				  nonInteraction: true
+				  });
+		}
+	}
 	
 	function mandaGA(boton){
 		if(boton==1){
-		//meter GA	
+			ga('send', 'event', 'Registration', 'Click2', 'Click on button 2', {
+				  nonInteraction: true
+				  });
 		}
 		if(boton==2){
-			//meter GA
+			ga('send', 'event', 'Registration', 'Click1', 'Click on button 1', {
+				  nonInteraction: true
+				  });
 		}
 	}
   </script>

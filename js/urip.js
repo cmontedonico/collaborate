@@ -389,6 +389,7 @@ $(document).ready(function(){
         if(error == false){
             $.post("contact.php", $("#contact-form").serialize(),function(result){
                 if(result == 'si'){
+					//meter GA
                     $('#success-notification').addClass('show-up');
                     $('.submit-btn').addClass('disabled');
                 }else{

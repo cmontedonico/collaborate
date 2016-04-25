@@ -1779,6 +1779,12 @@ a.menu-toggle span {
 	background-size: cover;
 }
 
+.hero-subscribe-layout #hero,
+.creative-layout-contadores #hero {
+	background: url(../images/stocks/team2.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
 .hero-form-layout #hero {
 	background: url(../images/stocks/stock3.jpg) no-repeat center center fixed;
 }

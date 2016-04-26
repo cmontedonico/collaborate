@@ -132,12 +132,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<a class="nav-close" href="#0"><span class="icon-cross2"></span></a>
 
 			<ul id="main-nav" class="main-nav all-caps">
-				<li class="current"><a href="#hero">Home</a></li>
-				<li><a id="benefitsAn" href="#top-client">QU&eacute; HACE WIINIK</a></li>
-				<li><a href="#benefits">BENEFICIOS</a></li>
-				<li><a href="#breakout">POR QU&eacute; USAR WIINIK</a></li>
-				<li><a href="#preview">VISTAS</a></li>
-				<li><a id="link_conta" href="#contadores_desc">CONTADORES</a></li>
+				<li class="current"><a href="#hero" onclick="ponUrl($(this).attr('href'))">Home</a></li>
+				<li><a id="benefitsAn" href="#top-client" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE WIINIK</a></li>
+				<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
+				<li><a href="#por_que_wiinik" onclick="ponUrl($(this).attr('href'))">POR QU&eacute; USAR WIINIK</a></li>
+				<li><a href="#preview" onclick="ponUrl($(this).attr('href'))">VISTAS</a></li>
+				<li><a id="link_conta" href="#contadores" onclick="ponUrl($(this).attr('href'))">CONTADORES</a></li>
 			</ul> <!--/ .main-nav -->
 
 		</nav>
@@ -285,7 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			== BEGIN BREAKOUT SECTION ==
 			============================
 			-->
-			<section class="breaking centered" style="display:none">
+			<section id="prueba" class="breaking centered" style="display:none">
 
 				<div class="color-overlay">
 
@@ -671,7 +671,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div id="divSliderEmpleador" style="width: 100%;">
 							  <div id="container" class="cf" style="width: 60%; margin-left: 20%;">
 
-							      <section class="slider" style="padding: 0">
+							      <section id="prueba2" class="slider" style="padding: 0">
 							        <div class="flexslider">
 							          <ul class="slides">
 							            	<li>
@@ -688,7 +688,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div id="divSliderEmpleado" style="width: 100%;display: none;">
 							  <div id="container" class="cf" style="width: 60%; margin-left: 20%;">
 
-							      <section class="slider">
+							      <section id="prueba3" class="slider">
 							        <div class="flexslider">
 							          <ul class="slides">
 							            	<li>
@@ -1153,6 +1153,40 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				  nonInteraction: true
 				  });
 		}
+	}
+	
+	
+	$(document).scroll(function () {
+		var currentHash="#hero";
+        $('section').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('id');
+            // 30 is an arbitrary padding choice, 
+            // if you want a precise check then use distance===0
+            if (distance < 5 && distance > -5 && currentHash != hash
+			&& hash != "prueba3" && hash != "prueba" && hash != "what-we-do"
+			&& hash != "breakout" && hash != "our-features"
+			&& hash != "contadores_desc" && hash != "prueba2") {
+                window.location.hash = (hash);
+                currentHash = hash;
+            }
+        });
+    });
+	
+	window.onhashchange = cambioHashGA;
+	
+	function cambioHashGA(){
+		ga('send', 'pageview', {
+ 'page': location.pathname + location.hash
+});
+	}
+	
+	function ponUrl(num){
+		
+		setTimeout(function(){
+    window.location.hash = (num);
+}, 700);
 	}
   </script>
 	</body>

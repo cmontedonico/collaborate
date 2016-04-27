@@ -132,11 +132,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<a class="nav-close" href="#0"><span class="icon-cross2"></span></a>
 
 			<ul id="main-nav" class="main-nav all-caps">
-				<li class="current"><a href="#hero" onclick="ponUrl($(this).attr('href'))">Home</a></li>
+				<li class="current"><a href="#hero" onclick="ponUrl($(this).attr('href'))" id="home">Home</a></li>
 				<li><a id="benefitsAn" href="#top-client" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE WIINIK</a></li>
-				<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
-				<li><a href="#por_que_wiinik" onclick="ponUrl($(this).attr('href'))">POR QU&eacute; USAR WIINIK</a></li>
-				<li><a href="#preview" onclick="ponUrl($(this).attr('href'))">VISTAS</a></li>
+				<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))"id="beneficios">BENEFICIOS</a></li>
+				<li><a href="#por_que_wiinik" onclick="ponUrl($(this).attr('href'))" id="por_que_wiinik">POR QU&eacute; USAR WIINIK</a></li>
+				<li><a href="#preview" onclick="ponUrl($(this).attr('href'))" id="vistas">VISTAS</a></li>
 				<li><a id="link_conta" href="#contadores" onclick="ponUrl($(this).attr('href'))">CONTADORES</a></li>
 			</ul> <!--/ .main-nav -->
 
@@ -186,13 +186,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 										<ul class="inline-cta">
 
 											<li data-sr="enter right over 1s wait 0.3s">
-												<a style="cursor: pointer;" onclick="clickAn('benefitsAn')" class="scroll-to cta cta-stroke all-caps">Aprende M&aacute;s</a>
+												<a style="cursor: pointer;" onclick="clickAn('benefitsAn')" class="scroll-to cta cta-stroke all-caps" id="Clicks_Aprende_Mas">Aprende M&aacute;s</a>
 											</li>
 
 											<li data-sr="enter left  over 1s wait 0.3s">
-												<a style="cursor: pointer;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(1)">Prueba Wiinik</a>
+												<a style="cursor: pointer;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(1)" id="Clicks_Prueba_Wiinik_1">Prueba Wiinik</a>
 											</li>
-											<br><br><br> <h3> ¿Eres contador? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')">Haz clic aqu&iacute;.</a></h3>
+											<br><br><br> <h3> ¿Eres contador? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
 										</ul> <!--/ .inline-cta -->
 
 											<a href="#top-client" class="scroll-to scroll-link"><span class="icon-chevron-thin-down" data-sr="enter top top 1s and move 50px wait 0.3s"></span></a>
@@ -658,11 +658,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<div class="row centered">
 						<ul class="inline-cta">
 							<li data-sr="enter right over 1s wait 0.3s">
-								<a id="btnSliderEmpleador" style="cursor: pointer;" onclick="chengeSlider(1)" class="scroll-to cta cta-default all-caps">Vista empleador</a>
+								<a id="btnSliderEmpleador" style="cursor: pointer;" onclick="chengeSlider(1)" class="scroll-to cta cta-default all-caps" id="Clicks_Vista_Empleador">Vista empleador</a>
 							</li>
 							
 							<li data-sr="enter right over 1s wait 0.3s">
-								<a id="btnSliderEmpleado" style="cursor: pointer;" onclick="chengeSlider(2)" class="scroll-to cta cta-stroke all-caps">Vista empleado</a>
+								<a id="btnSliderEmpleado" style="cursor: pointer;" onclick="chengeSlider(2)" class="scroll-to cta cta-stroke all-caps" id="Clicks_Vista_Empleado">Vista empleado</a>
 							</li>
 
 
@@ -855,7 +855,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<footer id="main-footer" class="app-layout centered">
 			<ul class="inline-cta">
 				<li data-sr="enter left  over 1s wait 0.3s">
-					<a style="cursor: pointer;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(2)">Prueba Wiinik</a>
+					<a style="cursor: pointer;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(2)" id="Clicks_Prueba_Wiinik_2">Prueba Wiinik</a>
 				</li>
 			</ul> 
 

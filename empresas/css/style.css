@@ -3456,3 +3456,11 @@ ul.language-selection {
 #main-footer.footer-vimeo-hovered .copyright .language a {
 	color: #fff;
 }
+
+.the-feature .imagen {
+	opacity:.5;
+}
+
+.the-feature:hover .imagen {
+	opacity:1;
+}

@@ -3490,5 +3490,6 @@ th, td{
     .tabla {
         margin-left: 0;
 		width: 100%;
+		font-size: 10px;
     }
 }

@@ -3478,7 +3478,7 @@ th, td{
 	font-size: 12px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 720px) {
     .tabla {
         margin-left: 0;
 		width: 100%;

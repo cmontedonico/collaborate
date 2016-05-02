@@ -3486,6 +3486,11 @@ th, td{
 	font-size: 12px;
 }
 
+.vistas-div{
+		margin-left:20%;
+		width: 60%; 
+	}
+
 @media screen and (max-width: 480px) {
     .tabla {
         margin-left: 0;

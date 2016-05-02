@@ -3490,6 +3490,10 @@ th, td{
     .tabla {
         margin-left: 0;
 		width: 100%;
-		font-size: 10px;
     }
+	th, td{
+	padding: 2px;
+	border: 1px solid white;
+	font-size: 10px;
+}
 }

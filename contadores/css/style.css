@@ -3456,3 +3456,31 @@ ul.language-selection {
 #main-footer.footer-vimeo-hovered .copyright .language a {
 	color: #fff;
 }
+
+.tabla{
+		width: 80%; 
+		margin-left: 10%;
+	}
+	
+.titulo-tabla{
+	background: #036C99;
+	color: white;
+	font-weight: bold;
+	text-align: center !important;
+}
+.fila-impar{
+	background: #19A7E5;
+	color: white;
+}
+th, td{
+	padding: 2px;
+	border: 1px solid white;
+	font-size: 12px;
+}
+
+@media screen and (max-width: 480px) {
+    .tabla {
+        margin-left: 0;
+		width: 100%;
+    }
+}

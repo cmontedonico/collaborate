@@ -1744,7 +1744,7 @@ a.menu-toggle span {
 }
 /* -- */
 
-#hero {
+#home {
 	position: relative;
 	overflow: hidden;
 	padding: 0;
@@ -1774,35 +1774,35 @@ a.menu-toggle span {
 
 /* 3.3 Hero Background */
 .hero-subscribe-layout #hero,
-.creative-layout #hero {
+.creative-layout #home {
 	background: url(../images/stocks/team-photo-1-dark.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
 .hero-subscribe-layout #hero,
-.creative-layout-contadores #hero {
+.creative-layout-contadores #home {
 	background: url(../images/stocks/team2.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
-.hero-form-layout #hero {
+.hero-form-layout #home {
 	background: url(../images/stocks/stock3.jpg) no-repeat center center fixed;
 }
 
-.app-layout #hero {
+.app-layout #home {
 	background: url(../images/stocks/stock5.jpg) no-repeat center center fixed;
 }
 
 .hero-subscribe-layout #hero,
 .hero-form-layout #hero,
-.app-layout #hero {
+.app-layout #home {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 }
 /* -- */
 
-#hero .container {
+#home .container {
 	height: 100vh;
 }
 
@@ -1982,12 +1982,12 @@ a.menu-toggle span {
 	margin-top: 0;
 }
 
-#hero a.cta-stroke {
+#home a.cta-stroke {
 	border-color: #fff;
 	color: #fff;
 }
 
-#hero .scroll-link {
+#home .scroll-link {
 	color: #fff;
 	font-size: 30px;
 	display: inline-block;

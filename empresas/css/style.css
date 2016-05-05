@@ -109,7 +109,7 @@
     top: 34px;
     font-size: 50px;
     color: #fff;
-    background-color: cadetblue;
+    background-color: #19a9e5;
     border-radius: 50%;
     padding: 5px;
 }
@@ -1586,8 +1586,8 @@ header {
 .header-clone .logo img {
 	position: absolute;
 	top: 3px;
-	width: 70px;
-	margin-top: -9px;
+	height: 32px;
+	margin-top: -4px;
 }
 
 .header-clone a.menu-toggle {
@@ -3484,7 +3484,7 @@ ul.language-selection {
 th, td{
 	padding: 2px;
 	border-bottom: 1px solid lightgrey;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .vistas-div{

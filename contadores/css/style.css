@@ -1586,8 +1586,8 @@ header {
 .header-clone .logo img {
 	position: absolute;
 	top: 3px;
-	width: 70px;
-	margin-top: -9px;
+	height: 32px;
+	margin-top: -4px;
 }
 
 .header-clone a.menu-toggle {
@@ -3476,7 +3476,7 @@ ul.language-selection {
 th, td{
 	padding: 2px;
 	border-bottom: 1px solid lightgrey;
-	font-size: 12px;
+	font-size: 13px;
 }
 
 .vistas-div{

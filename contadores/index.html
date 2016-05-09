@@ -132,12 +132,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<a class="nav-close" href="#0"><span class="icon-cross2"></span></a>
 
 			<ul id="main-nav" class="main-nav all-caps">
-				<li class="current"><a href="#hero">Home</a></li>
-				<li><a id="benefitsAn" href="#top-client">QU&eacute; HACE WIINIK</a></li>
-				<li><a href="#benefits">BENEFICIOS</a></li>
-				<li><a href="#breakout">POR QU&eacute; USAR WIINIK</a></li>
-				<li><a href="#preview">VISTAS</a></li>
-				<li><a id="link_conta" href="#contadores_desc">CONTADORES</a></li>
+				<li class="current"><a href="#home" onclick="ponUrl($(this).attr('href'))">Home</a></li>
+				<li><a id="benefitsAn" href="#contadores_desc" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE WIINIK</a></li>
+				<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
+				<li><a href="#comparativo" onclick="ponUrl($(this).attr('href'))">Comparativo</a></li>
+				<li><a href="#precios" onclick="ponUrl($(this).attr('href'))">precios</a></li>
+				<li><a id="link_conta" href="/empresas/">Empresas</a></li>
 			</ul> <!--/ .main-nav -->
 
 		</nav>
@@ -937,6 +937,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				  nonInteraction: true
 				  });
 		}
+	}
+	
+	function ponUrl(num){
+		
+		setTimeout(function(){
+    window.location.hash = (num);
+}, 700);
+	}
+	
+	$(document).scroll(function () {
+		var currentHash="#home";
+        $('section').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('id');
+            // 30 is an arbitrary padding choice, 
+            // if you want a precise check then use distance===0
+            if (distance < 5 && distance > -5 && currentHash != hash
+			&& hash != "prueba3" && hash != "prueba" && hash != "what-we-do"
+			&& hash != "breakout" && hash != "our-features" && hash != "prueba2") {
+                window.location.hash = (hash);
+                currentHash = hash;
+            }
+        });
+    });
+	
+	window.onhashchange = cambioHashGA;
+	
+	function cambioHashGA(){
+		ga('send', 'pageview', {
+ 'page': location.pathname + location.hash
+});
 	}
   </script>
 	</body>

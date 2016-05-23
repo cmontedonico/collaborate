@@ -2571,7 +2571,7 @@ ul.how-it-works-col li:last-child:hover {
 }
 
 #benefits{
-	background: url(../images/stocks/empleados-felices1.png) no-repeat center center;
+	background: url(../images/stocks/hm_rev_bg_1.jpg) no-repeat center center;
 	background-size: cover !important;
 }
 
@@ -3455,6 +3455,14 @@ ul.language-selection {
 #main-footer.footer-vimeo-hovered .copyright .language:before,
 #main-footer.footer-vimeo-hovered .copyright .language a {
 	color: #fff;
+}
+
+.the-feature .imagen {
+	opacity:.5;
+}
+
+.the-feature:hover .imagen {
+	opacity:1;
 }
 
 .tabla{

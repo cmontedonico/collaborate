@@ -568,8 +568,9 @@
 		margin-top: 0;
 	}
 
-	.logo img {
+	.the-origin-header .logo img {
 		width: 70px;
+		margin-top: 13px;
 	}
 
 	.app-layout #hero {

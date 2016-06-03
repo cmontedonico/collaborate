@@ -14,7 +14,9 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:700,400|Varela+Round">
-
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
+	
 	<!-- Font Icon -->
 	<link rel="stylesheet" href="fonts/icomoon/icomoon.css">
 
@@ -45,25 +47,25 @@
 	<!-- FAV AND TOUCH ICONS -->
 	<link rel="shortcut icon" href="images/favicon/favicon.ico">
 
-	<link rel="icon" type="image/png" href="images/favicon/favicon-32.png">
+	<link rel="icon" type="image/png" href="images/favicon/favicon.ico">
 
 	<!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/apple-touch-icon-152.png">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/favicon/favicon.ico">
 
 	<!-- For iPad with high-resolution Retina display running iOS ≤ 6: -->
-	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/apple-touch-icon-144.png">
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/favicon/favicon.ico">
 
 	<!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
-	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/apple-touch-icon-114.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicon/favicon.ico">
 
 	<!-- For iPad and iPad mini models with a 1× display -->
-	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/apple-touch-icon-76.png">
+	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/favicon/favicon.ico">
 
 	<!-- For first- and second-generation iPad: -->
-	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/apple-touch-icon-72.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicon/favicon.ico">
 
 	<!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
-	<link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-57.png">
+	<link rel="apple-touch-icon-precomposed" href="images/favicon/favicon.ico">
 
 
 	<!-- Google analytics code -->
@@ -124,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				<div class="col-lg-12">
 
-					<a href="#home" class="logo"><img src="images/winik.png" alt="Winik Logo" style="vertical-align:top;"></a>
+					<a href="#home" class="logo"><img src="images/Winik_logotipo.svg" alt="Winik Logo" ></a>
 					<!-- Your Logo -->
 
 					<a href="#0" id="nav-menu-trigger" class="menu-toggle flip pull-right all-caps">Men&uacute;<span class="icon-menu5"></span></a>
@@ -159,8 +161,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li class="current"><a href="#home" onclick="ponUrl($(this).attr('href'))">Home</a></li>
 			<li><a id="benefitsAn" href="#contadores_desc" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE Winik</a></li>
 			<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
-			<li><a href="#comparativo" onclick="ponUrl($(this).attr('href'))">Comparativo</a></li>
-			<li><a href="#precios" onclick="ponUrl($(this).attr('href'))">precios</a></li>
+			<!--<li><a href="#comparativo" onclick="ponUrl($(this).attr('href'))">Comparativo</a></li>
+			<li><a href="#precios" onclick="ponUrl($(this).attr('href'))">precios</a></li> -->
 			<li><a id="link_conta" href="/blog/">Blog</a></li>
 			<li><a id="link_conta" href="/empresas/">Empresas</a></li>
 		</ul>
@@ -188,7 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			========================
 			-->
 		<section id="home">
-			<div class="color-overlay">
+			
 				<div class="container">
 
 					<div class="vertical-center-wrapper">
@@ -201,9 +203,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 										<br><br>
 										<p class="lead all-caps text-shadow-small margin-bot-30">
-											<h2>¡Bienvenido a Winik!</h2></p>
+											<h4>¡BIENVENIDO A WINIK!</h4></p>
 										<br>
-										<h1 style="font-size:46px;" class="all-caps text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s">Automatiza la N&oacute;MINA Y GESTI&oacute;N DEL IMSS</h1>
+										<h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s">Automatiza la N&oacute;mina y gesti&oacute;n del IMSS</h1>
 										<!-- BEGIN Animated/Rotating Headline -->
 										<h3 class="all-caps animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s">
 											<span style="font-size:22px">
@@ -215,9 +217,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 										<ul class="inline-cta">
 
-											<li data-sr="enter right over 1s wait 0.3s">
+											<!--<li data-sr="enter right over 1s wait 0.3s">
 												<a style="cursor: pointer; margin-top: 0;" onclick="clickAn('benefitsAn')" class="scroll-to cta cta-stroke all-caps">Aprende M&aacute;s</a>
-											</li>
+											</li>-->
 
 											<li data-sr="enter left  over 1s wait 0.3s">
 												<a style="cursor: pointer; margin-top: 0;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(1)">Solicita un Demo</a>
@@ -243,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<!-- / .vertical-center-wrapper -->
 
-				</div>
+				</div>	
 				<!--/ .container -->
 
 		</section>
@@ -408,7 +410,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="the-feature col-lg-3 col-md-3 col-sm-6" style="margin-bottom: 56px;">
 
 						<a>
-							<img class="imagen" src="images/icons/payroll_black.png" height="50px;" />
+							
+							<img class="imagen" src="images/icons/payroll_rosa.png" height="50px;" />
+							
 							<span class="feature-icon icon-credit" style="font-size:0px;"></span>
 
 							<h4 class="feature-title">Administraci&oacute;n f&aacute;cil de n&oacute;mina</h4>
@@ -455,7 +459,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 						<a>
 							<span class="feature-icon icon-calculator2" style="font-size:0px;"></span>
-							<img class="imagen" src="images/icons/integracion_black.png" height="50px;" />
+							<img class="imagen" src="images/icons/integracion_rosa.png" height="50px;" />
 							<h4 class="feature-title">Integraci&oacute;n con sistemas contables</h4>
 
 							<p>Descarga las p&oacute;lizas contables completas en un clic para hacer el upload f&aacute;cil y r&aacute;pido a tu sistema contable. ¡As&iacute; de sencillo!</p>
@@ -484,7 +488,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			== BEGIN Comparativo SECTION ==
 			================================
 			-->
-		<section id="comparativo" class="centered">
+<!--		<section id="comparativo" class="centered">
 
 			<div class="container">
 				<div class="row">
@@ -496,12 +500,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<!--/ .col-lg-8 -->
 
-				</div>
+<!--				</div>
 				<!--/ .row -->
-			</div>
+<!--			</div>
 			<!--/ .container -->
 
-			<div class="container-full">
+<!--			<div class="container-full">
 
 				<div class="row centered">
 
@@ -635,10 +639,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<!--/ .row -->
 
-			</div>
+	<!--		</div>
 			<!--/ .container-full -->
 
-		</section>
+	<!--	</section>
 		<!--
 			===============================
 			==/ END Comparativo SECTION ==
@@ -651,7 +655,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			== BEGIN Precios SECTION ==
 			================================
 			-->
-		<section id="precios" class="gray-bg">
+<!--		<section id="precios" class="gray-bg">
 
 			<div class="container">
 				<div class="row">
@@ -663,19 +667,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					</div>
 					<!--/ .col-lg-8 -->
 
-				</div>
+<!--				</div>
 				<!--/ .row -->
-			</div>
+<!--			</div>
 			<!--/ .container -->
 
-			<div class="container-full">
+<!--			<div class="container-full">
 
 				<div class="row centered">
 
 
 
 					<!-- Tabla 2-->
-					<div id="divSliderEmpleador" style="width: 100%;">
+	<!--				<div id="divSliderEmpleador" style="width: 100%;">
 						<div id="container" class="tabla">
 
 							<table style="width:100%">
@@ -790,10 +794,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				</div>
 				<!--/ .row -->
 
-			</div>
+	<!--		</div>
 			<!--/ .container-full -->
 
-		</section>
+	<!--	</section>
 		<!--
 			===============================
 			==/ END Precios SECTION ==

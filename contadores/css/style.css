@@ -292,7 +292,7 @@ a {
 }
 
 a:hover {
-	color: #e74260;
+	color: #D13C56;
 	text-decoration: none;
 }
 
@@ -631,6 +631,10 @@ body.overflow-hidden:before {
 	background: #e74260;
 }
 
+.cta-default:hover{
+	background: #D13C56;
+}
+
 .cta-stroke {
 	margin-top: 22px;
 	border: 2px solid #e74260;
@@ -639,9 +643,9 @@ body.overflow-hidden:before {
 }
 
 .cta-stroke:hover, .cta-stroke:focus {
-	color: #e74260;
+	color: #D13C56;
 }
-
+/*
 .cta-default:after,
 .cta-stroke:after {
 	position: relative;
@@ -664,7 +668,7 @@ body.overflow-hidden:before {
 	font-size: 14px;
 	opacity: 1;
 }
-
+*/
 .cta-transparent {
 	border: 2px solid rgba(255, 255, 255, 0);
 	background-color: rgba(34,34,34,.14);
@@ -3515,4 +3519,31 @@ th, td{
 		width: 100%; 
 	}
 	
+}
+
+.boton-play{
+	vertical-align: middle;
+	background: #e74260;
+	text-align: center;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	padding-top: 10px;
+}
+
+.boton-play:hover{
+	
+	background: #D13C56;
+}
+
+.inline-cta b {
+	margin-left: 10px;
+	font-family: "Montserrat", sans-serif;
+	vertical-align: middle;
+	color: #fff;
+	font-weight: 300;
+	width: 100%;
+	letter-spacing:2px;
+	text-align: center;
 }

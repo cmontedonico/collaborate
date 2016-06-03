@@ -19,6 +19,8 @@
 	
 	<!-- Font Icon -->
 	<link rel="stylesheet" href="fonts/icomoon/icomoon.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 	<!-- Swipebox -->
 	<link rel="stylesheet" href="css/swipebox.css">
@@ -42,6 +44,7 @@
 
 
 	<script src="js/modernizr.js"></script>
+	
 	<!-- Modernizr -->
 
 	<!-- FAV AND TOUCH ICONS -->
@@ -89,6 +92,11 @@
 	</script>
 	<!-- End Google ANalytics code -->
 
+
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+	<link href="src/jquery-video-lightning.css" rel="stylesheet" type="text/css">
+	
 </head>
 
 <body>
@@ -213,14 +221,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												<b>La plataforma en la nube para la n&oacute;mina de tus clientes</b>
 											</span> <!--/ .animated-words-wrapper -->
 										</h3>
+										
 										<!--/ END Animated/Rotating Headline -->
+
+
 
 										<ul class="inline-cta">
 
 											<!--<li data-sr="enter right over 1s wait 0.3s">
 												<a style="cursor: pointer; margin-top: 0;" onclick="clickAn('benefitsAn')" class="scroll-to cta cta-stroke all-caps">Aprende M&aacute;s</a>
 											</li>-->
-
+											<li data-sr="enter left  over 1s wait 0.3s">
+												<a style="cursor: pointer; margin-top: 0;"  id="boton-play" class="cta boton-play" data-video-id="y-rWIcubkPaxo"><i class="material-icons" style="font-size: 30px;">play_arrow</i></a>
+												<b>Ve c&oacute;mo funciona</b>
+												
+											</li>
+											<br><br>
 											<li data-sr="enter left  over 1s wait 0.3s">
 												<a style="cursor: pointer; margin-top: 0;" class="cta cta-default all-caps contact-trigger" onclick="mandaGA(1)">Solicita un Demo</a>
 											</li>
@@ -1072,6 +1088,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<!-- FlexSlider -->
 	<script defer src="slider/js/jquery.flexslider.js"></script>
+	
+	<script src="src/jquery-video-lightning.js"></script>
+	
+<script>
+$(function(){
+        $("#boton-play").jqueryVideoLightning({
+            autoplay: 1,
+			width: "900px",
+            backdrop_color: "#ddd",
+            backdrop_opacity: 0.6,
+            glow: 20,
+            glow_color: "#000"
+        });
+    });
+	</script>
+
+</script>
 
 	<script type="text/javascript">
 		$(window).load(function() {

@@ -254,6 +254,7 @@ h6 {
 }
 
 p.section-title {
+	font-family: "Montserrat", sans-serif;
 	color: #777;
 	text-align: center;
 	text-transform: uppercase;
@@ -272,6 +273,7 @@ p.section-title:after {
 }
 
 .section-heading {
+	font-family: "Montserrat", sans-serif;	
 	margin-top: 42px;
 	margin-bottom: 35px;
 }
@@ -3484,7 +3486,7 @@ ul.language-selection {
 	
 .titulo-tabla{
 	background: lightgray;
-	color:# 888888;
+	color: #888888;
 	font-weight: bold;
 	text-align: center !important;
 	border-bottom: 1px solid white;
@@ -3558,6 +3560,16 @@ th, td{
 	font-family: "Montserrat", sans-serif;
 }
 
+#nom_compania2{
+	margin-right: 20px;
+	display: inline-block;
+	height: 41.71px;
+	padding: 8px 22px;
+	width: 30%;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+}
+
 
 @media screen and (max-width: 980px) {
    #nom_compania{
@@ -3568,7 +3580,18 @@ th, td{
 	width: 40%;
 	font-size: 18px;
 	font-family: "Montserrat", sans-serif;
+	
 }	
+ #nom_compania2{
+	margin-right: 20px;
+	display: inline-block;
+	height: 41.71px;
+	padding: 8px 10px;
+	width: 40%;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+ }
+}
 
 @media screen and (max-width: 400px) {
    #nom_compania{
@@ -3581,12 +3604,22 @@ th, td{
 	font-family: "Montserrat", sans-serif;
 	margin-bottom: 10px;
 }
+#nom_compania2{
+	margin-right: 20px;
+	display: inline-block;
+	height: 41.71px;
+	padding: 8px 10px;
+	width: 90%;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 10px;
+}
 #home {
-	height: 125vh;
+	height: 700px;
 }
 
 #home .container {
-	height: 125vh;
+	height: 700px;
 }
 
 }

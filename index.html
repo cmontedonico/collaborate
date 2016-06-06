@@ -208,9 +208,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 									<br><br>
 									<p class="lead all-caps text-shadow-small margin-bot-30">
-										<h4>¡BIENVENIDO A WINIK!</h4></p>
-									<br>
-									<h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s">Simplifica tu n&oacute;mina y gesti&oacute;n del IMSS</h1>
+									<br><br>
+									<h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s" style="font-family:'Montserrat',sans-serif;">Simplifica tu n&oacute;mina y gesti&oacute;n del IMSS</h1>
 									<!-- BEGIN Animated/Rotating Headline -->
 									<h3 class="all-caps animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s">
 											<span style="font-size:22px">
@@ -221,20 +220,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 									<!--/ END Animated/Rotating Headline -->
 
 									<ul class="inline-cta">
-										<li data-sr="enter left  over 1s wait 0.3s">
-												<a style="cursor: pointer; margin-top: 0;"  id="boton-play" class="cta boton-play" data-video-id="y-rWIcubkPaxo"><i class="material-icons" style="font-size: 30px;">play_arrow</i></a>
-												<b>Ve c&oacute;mo funciona</b>
-												
-											</li>
-											<br><br>
-										
-
 										<li data-sr="enter left  over 1s wait 0.3s" style="width:100%;">
 											<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
-											<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa">Crear Empresa</a>
+											<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Crear Empresa</a>
+										<br>
+										<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px;" id="empresa_requerida">Campo requerido</b>
 										</li>
+											<br><br>
+										<li data-sr="enter left  over 1s wait 0.3s">
+												<a style="cursor: pointer; margin-top: 0;"  id="boton-play" class="cta boton-play" data-video-id="y-rWIcubkPaxo"><i class="material-icons" style="font-size: 30px;">play_arrow</i></a>
+												<b style="letter-spacing: 0px; font-weight: 700; font-size: 18px;">Ve c&oacute;mo funciona</b>
+												
+											</li>
+											
+										
+
+										
 										<br><br><br>
-										<h3> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
+										<h3 style="font-size:18px;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
 									</ul>
 									<!--/ .inline-cta -->
 
@@ -1150,9 +1153,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<footer id="main-footer" class="app-layout centered">
 		<ul class="inline-cta">
 			<li data-sr="enter left  over 1s wait 0.3s" style="width:94%;">
-											<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
-											<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa">Crear Empresa</a>
-										</li>
+				<input name="compania" class="form-control" id="nom_compania2" placeholder="Nombre de tu empresa" type="text">
+				<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(2)">Crear Empresa</a>
+				<br>
+				<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px;" id="empresa_requerida2">Campo requerido</b>						
+			</li>
 		</ul>
 
 		<div class="container">
@@ -1418,6 +1423,29 @@ $(function(){
 -->
 
 	<script type="text/javascript">
+	
+	function crear_empresa(variable){
+		if(variable==1){
+			nombre = $('#nom_compania').val();
+            if(nombre != ""){
+				window.location.href = "http://winik.mx/?nom="+nombre;
+			}
+			else{
+				$('#empresa_requerida').show();
+			}
+		}
+		if(variable==2){
+			nombre = $('#nom_compania2').val();
+            if(nombre != ""){
+				window.location.href = "http://winik.mx/?nom="+nombre;
+			}
+			else{
+				$('#empresa_requerida2').show();
+			}
+		}
+    };
+	
+	
 		$(window).load(function() {
 			$('.flexslider').flexslider({
 				animation: "slide",
@@ -1425,6 +1453,8 @@ $(function(){
 					$('body').removeClass('loading');
 				}
 			});
+			$('#empresa_requerida').hide();
+			$('#empresa_requerida2').hide();
 		});
 
 		function clickAn(an) {

@@ -3579,6 +3579,14 @@ th, td{
 	width: 90%;
 	font-size: 18px;
 	font-family: "Montserrat", sans-serif;
+	margin-bottom: 10px;
+}
+#home {
+	height: 125vh;
+}
+
+#home .container {
+	height: 125vh;
 }
 
 }

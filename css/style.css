@@ -2412,6 +2412,37 @@ ul.how-it-works-col li:last-child:hover {
 	-webkit-border-radius: 8px;
 	-moz-border-radius: 8px;
 	border-radius: 8px;
+	text-align: left;
+}
+
+.the-feature:hover {
+	margin-top: -10px;
+	margin-bottom: 53px;
+	padding: 15px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	text-align: left;
+	background: lightgray;
+}
+
+.the-feature:hover .feature-icon {
+	color: #D13C56;
+}
+
+.the-feature:hover .feature-title {
+	color: #D13C56;
+}
+
+
+.the-feature h4{
+	margin-left: 0;
+}
+
+.the-feature p{
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	font-family: "Montserrat", sans-serif;
 }
 /*
 .the-feature:hover {
@@ -3477,7 +3508,7 @@ ul.language-selection {
 }
 
 .the-feature:hover .imagen {
-	opacity:1;
+	opacity:1.5;
 }
 
 .tabla{

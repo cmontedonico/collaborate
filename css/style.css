@@ -2427,16 +2427,17 @@ ul.how-it-works-col li:last-child:hover {
 }
 
 .the-feature:hover .feature-icon {
-	color: #D13C56;
+	color: #e74260;
 }
 
 .the-feature:hover .feature-title {
-	color: #D13C56;
+	color: #e74260;
 }
 
 
 .the-feature h4{
 	margin-left: 0;
+	font-family: "Montserrat", sans-serif;
 }
 
 .the-feature p{
@@ -2450,14 +2451,14 @@ ul.how-it-works-col li:last-child:hover {
 }
 */
 .feature-icon {
-	color: #e74260;
+	color: #222;
 	font-size: 50px;
 }
 
 .feature-title {
 	margin-top: 17px;
 	margin-bottom: 15px;
-	color:#e74260;
+	color:#222;
 }
 
 /* 7.1 Feature Icon on Hero Form Layout */
@@ -3504,11 +3505,19 @@ ul.language-selection {
 }
 
 .the-feature .imagen {
-	opacity:1;
+	opacity: 1;
 }
 
 .the-feature:hover .imagen {
-	opacity:1.5;
+	display: none;
+}
+
+.the-feature .imagen2 {
+	display: none;
+}
+
+.the-feature:hover .imagen2 {
+	display: inline-block;
 }
 
 .tabla{
@@ -3654,4 +3663,11 @@ th, td{
 	height: 700px;
 }
 
+}
+
+::selection{
+	background: #e74260;
+}
+::-moz-selection{
+	background: #e74260;
 }

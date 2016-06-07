@@ -10,7 +10,7 @@
 	<meta name="author" content="">
 
 
-	<title>Winik | La Soluci&oacute;n Sencilla para la Administraci&oacute;n de N&oacute;mina, IMSS y Recursos Humanos</title>
+	<title>Winik - La Soluci&oacute;n Sencilla para la Administraci&oacute;n de N&oacute;mina, IMSS y Recursos Humanos</title>
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -224,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
 											<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Crear Empresa</a>
 										<br>
-										<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px;" id="empresa_requerida">Campo requerido</b>
+										<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px; display:none;" id="empresa_requerida">Campo requerido</b>
 										</li>
 											<br><br>
 										<li data-sr="enter left  over 1s wait 0.3s">
@@ -1156,7 +1156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<input name="compania" class="form-control" id="nom_compania2" placeholder="Nombre de tu empresa" type="text">
 				<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(2)">Crear Empresa</a>
 				<br>
-				<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px;" id="empresa_requerida2">Campo requerido</b>						
+				<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px; display:none" id="empresa_requerida2">Campo requerido</b>						
 			</li>
 		</ul>
 
@@ -1453,8 +1453,6 @@ $(function(){
 					$('body').removeClass('loading');
 				}
 			});
-			$('#empresa_requerida').hide();
-			$('#empresa_requerida2').hide();
 		});
 
 		function clickAn(an) {
@@ -1528,7 +1526,7 @@ $(function(){
 				// 30 is an arbitrary padding choice, 
 				// if you want a precise check then use distance===0
 				if (distance < 5 && distance > -5 && currentHash != hash && hash != "prueba3" && hash != "prueba" && hash != "what-we-do" && hash != "breakout" && hash != "our-features" && hash != "contadores_desc" && hash != "prueba2") {
-					window.location.hash = (hash);
+					window.location.replace('#'+hash);
 					currentHash = hash;
 				}
 			});

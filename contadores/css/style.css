@@ -103,6 +103,13 @@
     min-height: 300px;
 }
 
+#contadores_desc .the-feature:hover a{
+	border: #fff 2px solid;
+    border-radius: 30px;
+    padding: 10px;
+    min-height: 300px;
+}
+
 #por_que_wiinik .the-feature .feature-icon{
 	position: absolute;
     left: -10px;

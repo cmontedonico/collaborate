@@ -3666,9 +3666,11 @@ th, td{
 }
 
 ::selection{
+	color: #fff;
 	background: #e74260;
 }
 ::-moz-selection{
+	color:#fff;
 	background: #e74260;
 }
 

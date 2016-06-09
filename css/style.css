@@ -1620,7 +1620,7 @@ a.menu-toggle {
 }
 
 a.menu-toggle:hover {
-	color: #eee;
+	color: #e74260;
 	text-decoration: none;
 }
 
@@ -2451,7 +2451,7 @@ ul.how-it-works-col li:last-child:hover {
 }
 */
 .feature-icon {
-	color: #222;
+	color: #777;
 	font-size: 50px;
 }
 
@@ -3670,4 +3670,8 @@ th, td{
 }
 ::-moz-selection{
 	background: #e74260;
+}
+
+.video-close:hover{
+	background: #e74260 !important;
 }

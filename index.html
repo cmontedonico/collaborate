@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic|Montserrat:700,400|Varela+Round">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300,800' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'>
-	<link href="src/jquery-video-lightning.css" rel="stylesheet" type="text/css">
+	<link href="src/videoLightning.css" rel="stylesheet" type="text/css">
 	<!-- Font Icon -->
 	<link rel="stylesheet" href="fonts/icomoon/icomoon.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -237,7 +237,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 										
 										<br><br><br>
-										<h3 style="font-size:18px;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
+										<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
 									</ul>
 									<!--/ .inline-cta -->
 
@@ -507,7 +507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- BEGIN 1st Row Features -->
 					<div class="the-feature col-lg-4 col-md-4 col-sm-6">
 
-						<img class="imagen" src="images/icons/payroll_black.png" height="50px;" />
+						<img class="imagen" src="images/icons/payroll_gris.png" height="50px;" />
 						<img class="imagen2" src="images/icons/payroll_rosa.png" height="50px;" />
 							<span class="feature-icon icon-credit" style="font-size:0px;"></span>
 							
@@ -553,7 +553,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="the-feature col-lg-4 col-md-4 col-sm-6">
 
 						<span class="feature-icon icon-calculator2" style="font-size:0px;"></span>
-							<img class="imagen" src="images/icons/integracion_black.png" height="50px;" />
+							<img class="imagen" src="images/icons/integracion_gris.png" height="50px;" />
 							<img class="imagen2" src="images/icons/integracion_rosa.png" height="50px;" />
 							
 							<h4 class="feature-title">Integraci&oacute;n con sistemas contables</h4>
@@ -1416,13 +1416,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- FlexSlider -->
 	<script defer src="slider/js/jquery.flexslider.js"></script>
 
-<script src="src/jquery-video-lightning.js"></script>
+<script src="src/VideoLightning.js"></script>
 
-	<!-- Funcion para el video
+	
 <script>
 $(function(){
         $("#boton-play").jqueryVideoLightning({
-            autoplay: 1,
+            autoplay: true,
+			controls: 1,
+			ivLoadPolicy: 3,
+			autoclose: true,
+			showinfo: 0,
+			modestbranding: 0,
 			width: "900px",
             backdrop_color: "#ddd",
             backdrop_opacity: 0.6,
@@ -1431,7 +1436,7 @@ $(function(){
         });
     });
 	</script>
--->
+
 
 	<script type="text/javascript">
 	

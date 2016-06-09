@@ -389,7 +389,7 @@
 
       VideoLightning.prototype.initPlayerYT = function() {
         _setSrc(this.iframe, {
-          url:  "https://www.youtube.com/embed/" + this.id,
+          url: "http://www.youtube.com/embed/" + this.id,
           params: {
             enablejsapi: 1,
             autoplay: _bitify(this.opts.autoplay, 1),

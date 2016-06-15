@@ -194,6 +194,14 @@ p {
 	line-height: 24px;
 }
 
+.entry-content p{
+	font-family: "Montserrat", sans-serif;
+}
+
+.entry-content h3{
+	font-family: "Montserrat", sans-serif;
+}
+
 p.lead {
 	font-size: 24px;
 }

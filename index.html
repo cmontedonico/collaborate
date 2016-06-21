@@ -175,8 +175,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<!--		<li><a href="#preview" onclick="ponUrl($(this).attr('href'))" id="vistas">VISTAS</a></li>
 			<li><a href="#comparativo" onclick="ponUrl($(this).attr('href'))" id="comparativo_emp">Comparativo</a></li>
 			<li><a href="#precios" onclick="ponUrl($(this).attr('href'))" id="precios_emp">Precios</a></li> -->
-			<li><a id="link_conta" href="/blog/">Blog</a></li>
-			<li><a id="link_conta" href="/contadores/">CONTADORES</a></li>
+			<li><a id="link_blog" href="/blog/">Blog</a></li>
+			<li><a id="menu_contadores" href="/contadores/">CONTADORES</a></li>
 		</ul>
 		<!--/ .main-nav -->
 
@@ -244,7 +244,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 											<br><br><br>
-											<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('link_conta')" id="Clicks_Contadores">Haz clic aqu&iacute;.</a></h3>
+											<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('menu_contadores')" id="eres_despacho">Haz clic aqu&iacute;.</a></h3>
 										</ul>
 										<!--/ .inline-cta -->
 
@@ -1168,7 +1168,7 @@ $(function(){
 					nonInteraction: true
 				});
 			}
-			if (an == 'link_conta') {
+			if (an == 'menu_contadores') {
 				ga('send', 'event', 'Contadores', 'Click', 'Click on contadores label', {
 					nonInteraction: true
 				});

@@ -171,13 +171,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<a class="nav-close" href="#0"><span class="icon-cross2"></span></a>
 
 		<ul id="main-nav" class="main-nav all-caps">
-			<li class="current"><a href="#home" onclick="ponUrl($(this).attr('href'))">Home</a></li>
-			<li><a id="benefitsAn" href="#contadores_desc" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE Winik</a></li>
-			<li><a href="#benefits" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
+			<li class="current"><a id="homeAn" href="#home" onclick="ponUrl($(this).attr('href'))">Home</a></li>
+			<li><a id="que_hace_winikAn" href="#contadores_desc" onclick="ponUrl($(this).attr('href'))">QU&eacute; HACE Winik</a></li>
+			<li><a id="beneficiosAn" href="#beneficios" onclick="ponUrl($(this).attr('href'))">BENEFICIOS</a></li>
 			<!--<li><a href="#comparativo" onclick="ponUrl($(this).attr('href'))">Comparativo</a></li>
 			<li><a href="#precios" onclick="ponUrl($(this).attr('href'))">precios</a></li> -->
-			<li><a id="link_conta" href="/blog/">Blog</a></li>
-			<li><a id="link_conta" href="http://winik.mx">Empresas</a></li>
+			<li><a id="link_blog" href="/blog/">Blog</a></li>
+			<li><a id="link_empresas" href="http://winik.mx">Empresas</a></li>
 		</ul>
 		<!--/ .main-nav -->
 
@@ -368,7 +368,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			== BEGIN BENEFITS IMAGE SECTION ==
 			============================
 			-->
-		<section id="benefits" class="breaking centered">
+		<section id="beneficios" class="breaking centered">
 
 			<div class="color-overlay">
 
@@ -874,7 +874,7 @@ $(function(){
 		function ponUrl(num) {
 
 			setTimeout(function() {
-				window.location.replace('#'+num);
+				window.location.replace(num);
 			}, 700);
 		}
 

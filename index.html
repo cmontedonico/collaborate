@@ -236,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											</li>
 											<br><br>
 											<li data-sr="enter left  over 1s wait 0.3s">
-												<a style="cursor: pointer; margin-top: 0;" id="boton-play" class="cta boton-play" data-video-id="y-rWIcubkPaxo"><i class="material-icons" style="font-size: 30px;">play_arrow</i></a>
+												<a style="cursor: pointer; margin-top: 0;" id="boton-play" class="cta boton-play material-icons" data-video-id="y-rWIcubkPaxo" ><i id="boton-play" class="material-icons" style="font-size: 30px;">play_arrow</i></a>
 												<b id="btn_play" style="letter-spacing: 0px; font-weight: 700; font-size: 18px;">Ve c&oacute;mo funciona</b>
 
 											</li>
@@ -1138,6 +1138,7 @@ $(function(){
 			if (variable == 1) {
 				nombre = $('#nom_compania').val();
 				if (nombre != "") {
+					dataLayer.push({'event':'Company Register', 'eventCategory':'Boton Superior', 'eventAction': 'submit'});
 					window.location.href = "https://app.winik.mx/#/name.html/" + nombre;
 				} else {
 					$('#empresa_requerida').show();
@@ -1146,6 +1147,7 @@ $(function(){
 			if (variable == 2) {
 				nombre = $('#nom_compania2').val();
 				if (nombre != "") {
+					dataLayer.push({'event':'Company Register', 'eventCategory':'Boton Inferior', 'eventAction': 'submit'});
 					window.location.href = "https://app.winik.mx/#/name.html/" + nombre;
 				} else {
 					$('#empresa_requerida2').show();

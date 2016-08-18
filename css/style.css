@@ -3367,7 +3367,7 @@ td {
         display: inline-block;
         height: 41.71px;
         padding: 8px 10px;
-        width: 90%;
+        width: 100%;
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
         margin-bottom: 10px;
@@ -3382,14 +3382,23 @@ td {
         font-family: "Montserrat", sans-serif;
         margin-bottom: 10px;
     }
-    #home {
-        height: 700px;
+
+    #boton-play{
+        display: inherit;
     }
-    #home .container {
-        height: 700px;
+    #crear_empresa{
+        width: 100%;
     }
 }
 
+@media screen and (max-width:700px) {
+    #home {
+        height: auto;
+    }
+    #home .container {
+        height: auto;
+    }
+}
 ::selection {
     color: #fff;
     background: #e74260;
@@ -3414,4 +3423,115 @@ td {
 #blog_winik .section-heading{
     margin-top: 80px;
     margin-bottom: 20px; 
+}
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #E8E2D5;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    width: 30%; /* Could be more or less, depending on screen size */
+    border: 8px solid #e74260;
+    font-size: 16px;
+    font-family: "Montserrat",sans-serif;
+    color: #000;
+}
+
+.modal-content p{
+    font-size: 22px;
+    font-family: "Montserrat",sans-serif;
+    color: #000;
+}
+
+/* The Close Button */
+.close, .close:hover {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    font-weight: normal;
+    color: #fff;
+    font-size: 24px;
+    margin-top: -45px;
+    margin-right: -45px;
+    background-color: #000;
+    opacity: 1;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+.name-field2 {
+    width: 95% !important;
+    vertical-align: top !important;
+    color: #777 !important;
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    position: relative !important;
+    overflow: hidden !important;
+    border: none !important;
+    -webkit-border-radius: 6px 0 0 6px !important;
+    -moz-border-radius: 6px 0 0 6px !important;
+    border-radius: 6px !important;
+    background: #eee !important;
+    background-clip: padding-box !important;
+    box-shadow: none !important;
+    -webkit-transition: all 0.3s !important;
+    transition: all 0.3s !important;
+    height: 40px !important;
+    padding: 0 5px !important;
+    font-family: "Montserrat", sans-serif !important;
+    margin: 0 !important;
+    margin-bottom: 5px !important;
+}
+
+.email-field2 {
+    width: 80%;
+    color: #777;
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    background: #eee;
+    background-clip: padding-box;
+    box-shadow: none;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 40px;
+    padding: 0 20px;
+    vertical-align: top;
+}
+
+.submit-btn {
+    background: #e74260;
+    margin-left: -4px;
+    width: 14%;
+    height: 40px;
+    -webkit-border-radius: 0 6px 6px 0;
+    -moz-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+    color: #E8E2D5;
+    text-transform: uppercase;
+    font-size: 18px;
+    border: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
 }

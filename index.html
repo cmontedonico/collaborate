@@ -753,7 +753,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 			<!--
 			================================
-			== BEGIN OUR FEATURES SECTION ==
+			== BEGIN Blog Banner SECTION ==
 			================================
 			-->
 			<a href="http://winik.mx/blog/" id="blog_winik" target="_blank">
@@ -783,7 +783,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		</a>
 		<!--
 			===============================
-			==/ END OUR FEATURES SECTION ==
+			==/ END Blog Banner SECTION ==
 			===============================
 			-->
 
@@ -1096,6 +1096,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		=====================================
 		-->
 
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">x</span>
+		<p>Conoce antes que nadie todas las funcionalidades de Winik <b>¡Gratis!</b></p>
+		<img src="images/popup.png" style="width=100%;">
+		¡Únete a nuestra comunidad!
+		<input type="text" name="your-name" value="" size="40" class="name-field2" placeholder="Nombre">
+		<input type="email" name="email-520" value="" size="40" class="email-field2" placeholder="Email">
+		<button class="submit-btn" style="text-align:center;" onclick="submitPopup()"><i class="material-icons" style="margin-top: 4px;"></i></button>
+	</div>
+
+	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -1195,6 +1210,9 @@ $(function(){
 
 
 		$(window).load(function() {
+			if(getCookie(mailUsuarioWinik) != "" || getCookie(usuarioWinik) != "")
+				setTimeout(popup, 10000);
+		
 			$('.flexslider').flexslider({
 				animation: "slide",
 				start: function(slider) {
@@ -1202,6 +1220,53 @@ $(function(){
 				}
 			});
 		});
+
+		function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+} 
+	function submitPopup(){
+		var nombre = document.getElementsByName("your-name")[0].value;
+		var mail = document.getElementsByName("email-520")[0].value;
+		var modal = document.getElementById('myModal');
+		if(nombre!= "" && mail!=0){
+			 $.post("http://winik.mx/contact.php",
+				{
+					name: nombre,
+					email: mail
+				});
+				var d=new Date();
+				d.setTime(d.getTime() + (90*24*60*60*1000));
+				var expires = "expires="+ d.toUTCString();
+				document.cookie = "usuarioWinik=" + nombre +";" + expires;
+				document.cookie = "mailUsuarioWinik=" + mail+";" + expires;
+				modal.style.display = "none";
+		}
+	}
+		
+		function popup(){
+			var cerrar = document.getElementsByClassName("close")[0];
+			var modal = document.getElementById('myModal');
+			 modal.style.display = "block";
+			 cerrar.onclick = function() {
+   			 					modal.style.display = "none";
+							}
+			
+			window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+			}}
+		}
 
 		function clickAn(an) {
 			if (an == 'benefitsAn') {

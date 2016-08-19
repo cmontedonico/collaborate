@@ -3595,3 +3595,31 @@ td {
     font-family: "Montserrat", sans-serif;
     background: #e74260;
 }
+
+#login{
+    display: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    margin-top: -15px;
+}
+
+.header-clone #login{
+    display: none;
+}
+
+
+#nom_compania_login{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px; 
+    width: 95%;
+    padding: 5px 5px;
+}
+
+#login_btn{
+    cursor: pointer; 
+    margin-bottom: 10px; 
+    margin-top: 10px; 
+    width: 95%;
+    padding: 5px 5px;
+}

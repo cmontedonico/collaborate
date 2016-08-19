@@ -141,7 +141,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- Your Logo -->
 					
 					<a href="#0" id="nav-menu-trigger" class="menu-toggle flip pull-right all-caps">Men&uacute;<span class="icon-menu5" id="nav-menu-trigger2"></span></a>
-					<a style="cursor: pointer;" class="menu-toggle flip pull-right all-caps" id="accesoClientes" onClick="">Acceso Clientes</a>
+					<a style="cursor: pointer;" class="accesoClientes menu-toggle flip pull-right all-caps" id="accesoClientes" onclick="accesar(this)">Acceso Clientes</a>
+					<div id="login" name="login" style="background: #fff; text-align:center;" class="login col-md-3 col-sm-5 col-md-offset-8 col-sm-offset-6"> 
+						<input name="compania" id="nom_compania_login" placeholder="Nombre de tu empresa" type="text"></input>
+						<a class="cta cta-default all-caps" id="login_btn">Login</a> 
+					</div>
 					<!-- Menu Toggle -->
 
 				</div>
@@ -1188,6 +1192,18 @@ $(function(){
 
 
 	<script type="text/javascript">
+		
+	function accesar(elemento){
+		if($(elemento).parent().parent().parent().parent().hasClass("header-clone")){
+			$(".header-clone #login").show();
+		}
+		else{
+			$(".the-origin-header #login").show();
+		}
+	}
+
+		
+		
 		function crear_empresa(variable) {
 			if (variable == 1) {
 				nombre = $('#nom_compania').val();

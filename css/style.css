@@ -1462,6 +1462,7 @@ header {
 
 .header-clone a.menu-toggle {
     padding: 3px 0px;
+    margin: 0 !important;
 }
 
 a.menu-toggle {
@@ -3398,6 +3399,33 @@ td {
     #home .container {
         height: auto;
     }
+
+    #accesoClientesMobile{
+    display: inline-block !important;
+    margin-top: 9px;
+    margin-right:10px !important;
+    padding: 5px 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background: #e74260;
+    }
+    #accesoClientes{
+        display: none !important;
+    }
+    #nav-wrapper{
+        width:auto;
+        height: auto;
+        margin-top: 50px;
+        padding: 20px 20px;
+    }
+    .main-nav{
+        margin-bottom: 30px;
+        text-align: center; 
+    }
 }
 ::selection {
     color: #fff;
@@ -3534,4 +3562,36 @@ td {
     position: relative;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
+}
+
+#accesoClientes{
+    display: inline-block;
+    margin-top: 9px;
+    margin-right:10px !important;
+    padding: 5px 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background: #e74260;
+}
+
+.header-clone #accesoClientes{
+    padding: 3px 5px !important;
+}
+
+#accesoClientesMobile{
+    display: none;
+    margin-top: 9px;
+    margin-right:10px !important;
+    padding: 5px 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background: #e74260;
 }

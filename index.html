@@ -1107,10 +1107,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		==/ END FORM NOTIFICATIONS CONTENT ==
 		=====================================
 		-->
+	<!-- The Modal -->
+	<div id="modalLogin" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close">x</span>
+		La url: <label id="empresaLogin"> </label> no existe, ¿deseas crearla?
+		<br>
+		<a style="cursor: pointer;" class="accesoClientes menu-toggle flip all-caps" id="modalLoginSi">Si</a>
+		<a style="cursor: pointer;" class="accesoClientes menu-toggle flip all-caps" id="modalLoginNo">No</a>
+	</div>
+
+	</div>
+
+
 
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
-
 	<!-- Modal content -->
 	<div class="modal-content">
 		<span class="close">x</span>
@@ -1198,7 +1211,6 @@ $(function(){
 
 
 	<script type="text/javascript">
-		
 	
 
 		$(document).on('click', function(e) {
@@ -1227,30 +1239,115 @@ $(function(){
 			}
 			if ( $(e.target).closest('#loginMobile #login_btn').length ) {
 				var valor= $('#loginMobile #nom_compania_login').val()
-				//hacer validación usuario API
 				if($('#loginMobile #nom_compania_login').val()!=""){
-					window.open("https://"+valor+".winik.mx",'_blank');
-					$('#loginMobile #nom_compania_login').val("");
+					var xmlhttp = new XMLHttpRequest();
+					var url = "https://api.winik.mx/app.php/api/company/"+valor+"/exist";
+					xmlhttp.onreadystatechange = function() {
+  					  if (xmlhttp.readyState == 4 ) {
+        					var result = JSON.parse(xmlhttp.responseText);
+							if(result["code"]==403){
+								window.open("https://"+valor+".winik.mx",'_blank');
+								$('#loginMobile #nom_compania_login').val("");
+								$('#divLoginMobile').hide();
+							}
+							else{
+								$('#divLoginMobile').hide();
+								$('#loginMobile #nom_compania_login').val("");
+								var cerrar = document.getElementsByClassName("close")[0];
+								var modal = document.getElementById('modalLogin');
+								modal.style.display = "block";
+								document.getElementById("empresaLogin").innerHTML=valor;
+								cerrar.onclick = function() {
+													modal.style.display = "none";
+												}
+								window.onclick = function(event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}}
+							}
+    					}
+					};
+					xmlhttp.open( "GET", url, true ); 
+    				xmlhttp.send();
+					
 				}
 			}
 			if ( $(e.target).closest('.the-origin-header #login_btn').length ) {
 				var valor= $('.the-origin-header #nom_compania_login').val()
-				//hacer validación usuario API
 				if($('.the-origin-header #nom_compania_login').val()!=""){
-					window.open("https://"+valor+".winik.mx",'_blank');
-					$('.the-origin-header #nom_compania_login').val("");
-					$('.the-origin-header #login').hide();
+					var xmlhttp = new XMLHttpRequest();
+					var url = "https://api.winik.mx/app.php/api/company/"+valor+"/exist";
+					xmlhttp.onreadystatechange = function() {
+  					  if (xmlhttp.readyState == 4 ) {
+        					var result = JSON.parse(xmlhttp.responseText);
+							if(result["code"]==403){
+								window.open("https://"+valor+".winik.mx",'_blank');
+								$('.the-origin-header #nom_compania_login').val("");
+								$('.the-origin-header #login').hide();
+							}
+							else{
+								$('.the-origin-header #login').hide();
+								$('.the-origin-header #nom_compania_login').val("");
+								var cerrar = document.getElementsByClassName("close")[0];
+								var modal = document.getElementById('modalLogin');
+								modal.style.display = "block";
+								document.getElementById("empresaLogin").innerHTML=valor;
+								cerrar.onclick = function() {
+													modal.style.display = "none";
+												}
+								window.onclick = function(event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}}
+							}
+    					}
+					};
+					xmlhttp.open( "GET", url, true ); 
+    				xmlhttp.send();
+					
 				}
 			}
 			if ( $(e.target).closest('.header-clone #login_btn').length ) {
 				var valor= $('.header-clone #nom_compania_login').val()
-				//hacer validación usuario API
 				if($('.header-clone #nom_compania_login').val()!=""){
-					window.open("https://"+valor+".winik.mx",'_blank');
-					$('.header-clone #nom_compania_login').val("");
-					$('.header-clone #login').hide();
+					var xmlhttp = new XMLHttpRequest();
+					var url = "https://api.winik.mx/app.php/api/company/"+valor+"/exist";
+					xmlhttp.onreadystatechange = function() {
+  					  if (xmlhttp.readyState == 4 ) {
+        					var result = JSON.parse(xmlhttp.responseText);
+							if(result["code"]==403){
+								window.open("https://"+valor+".winik.mx",'_blank');
+								$('.header-clone #nom_compania_login').val("");
+								$('.header-clone #login').hide();
+							}
+							else{
+								$('.header-clone #login').hide();
+								$('.header-clone #nom_compania_login').val("");
+								var cerrar = document.getElementsByClassName("close")[0];
+								var modal = document.getElementById('modalLogin');
+								modal.style.display = "block";
+								document.getElementById("empresaLogin").innerHTML=valor;
+								cerrar.onclick = function() {
+													modal.style.display = "none";
+												}
+								window.onclick = function(event) {
+								if (event.target == modal) {
+									modal.style.display = "none";
+								}}
+							}
+    					}
+					};
+					xmlhttp.open( "GET", url, true ); 
+    				xmlhttp.send();
+					
 				}
 			}
+			if ( $(e.target).closest('#modalLoginSi').length ) {
+			window.location.href = "https://app.winik.mx/#/name.html/" + document.getElementById("empresaLogin").innerHTML;
+		}
+		if ( $(e.target).closest('#modalLoginNo').length ) {
+			$("#modalLogin").hide();
+		}
 
 		});
 		
@@ -1328,10 +1425,9 @@ $(function(){
 			 cerrar.onclick = function() {
    			 					modal.style.display = "none";
 							}
-			
 			window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    		if (event.target == modal) {
+        		modal.style.display = "none";
 			}}
 		}
 

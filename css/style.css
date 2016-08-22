@@ -3427,6 +3427,10 @@ td {
         margin-bottom: 30px;
         text-align: center; 
     }
+    .modal-content{
+        width:80% !important;
+        margin-top: 40% !important;
+    }
 }
 ::selection {
     color: #fff;
@@ -3633,3 +3637,32 @@ td {
     display: none;
     margin-top: 5px;
 }
+#modalLoginSi{
+    display: inline-block;
+    margin-top: 9px;
+    padding: 5px 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background: #e74260;
+    text-align: center;
+    width: 50px;
+    }
+
+    #modalLoginNo{
+    display: inline-block;
+    margin-top: 9px;
+    padding: 5px 5px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 5px;
+    color:  #e74260;
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+    text-align: center;
+    width: 50px;
+    }

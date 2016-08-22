@@ -1246,7 +1246,7 @@ $(function(){
   					  if (xmlhttp.readyState == 4 ) {
         					var result = JSON.parse(xmlhttp.responseText);
 							if(result["code"]==403){
-								window.open("https://"+valor+".winik.mx");
+								window.location.href= "https://"+valor+".winik.mx";
 								$('#loginMobile #nom_compania_login').val("");
 								$('#divLoginMobile').hide();
 							}
@@ -1281,7 +1281,7 @@ $(function(){
   					  if (xmlhttp.readyState == 4 ) {
         					var result = JSON.parse(xmlhttp.responseText);
 							if(result["code"]==403){
-								window.open("https://"+valor+".winik.mx");
+								window.location.href="https://"+valor+".winik.mx";
 								$('.the-origin-header #nom_compania_login').val("");
 								$('.the-origin-header #login').hide();
 							}
@@ -1316,7 +1316,7 @@ $(function(){
   					  if (xmlhttp.readyState == 4 ) {
         					var result = JSON.parse(xmlhttp.responseText);
 							if(result["code"]==403){
-								window.open("https://"+valor+".winik.mx");
+								window.location.href="https://"+valor+".winik.mx";
 								$('.header-clone #nom_compania_login').val("");
 								$('.header-clone #login').hide();
 							}

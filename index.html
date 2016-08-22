@@ -1225,7 +1225,7 @@ $(function(){
 				$('.header-clone #login').hide();
 			}
 			if ( $(e.target).closest('#accesoClientesMobile').length ) {
-				$("#nav-menu-trigger").click();
+				$("#nav-wrapper").addClass("nav-wrapper-opened");
 				$("#divLoginMobile").hide();
 				$("#loginMobile").css('display','inline-block');
 			}else if ( ! $(e.target).closest('#loginMobile').length ) {
@@ -1233,7 +1233,7 @@ $(function(){
 				$("#divLoginMobile").show();
 			}
 			if ( $(e.target).closest('#loginMobile #nom_compania_login').length ) {
-				$("#nav-menu-trigger").click();
+				$("#nav-wrapper").addClass("nav-wrapper-opened");
 				$("#divLoginMobile").hide();
 				$("#loginMobile").css('display','inline-block');
 			}

@@ -3385,7 +3385,7 @@ td {
     }
 
     #boton-play{
-        display: inherit;
+        display: inline-block;
     }
     #crear_empresa{
         width: 100%;
@@ -3401,9 +3401,8 @@ td {
     }
 
     #accesoClientesMobile{
-    display: inline-block !important;
+    display: block !important;
     margin-top: 9px;
-    margin-right:10px !important;
     padding: 5px 5px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -3412,12 +3411,14 @@ td {
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     background: #e74260;
+    text-align: center;
+    width: 100%;
     }
     #accesoClientes{
         display: none !important;
     }
     #nav-wrapper{
-        width:auto;
+        width: 80%;
         height: auto;
         margin-top: 50px;
         padding: 20px 20px;
@@ -3585,7 +3586,6 @@ td {
 #accesoClientesMobile{
     display: none;
     margin-top: 9px;
-    margin-right:10px !important;
     padding: 5px 5px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
@@ -3622,4 +3622,14 @@ td {
     margin-top: 10px; 
     width: 95%;
     padding: 5px 5px;
+}
+
+.header-clone #login{
+    margin-top: 2px;
+}
+
+#loginMobile{
+    border-radius: 5px;
+    display: none;
+    margin-top: 5px;
 }

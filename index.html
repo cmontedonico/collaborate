@@ -141,10 +141,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<!-- Your Logo -->
 					
 					<a href="#0" id="nav-menu-trigger" class="menu-toggle flip pull-right all-caps">Men&uacute;<span class="icon-menu5" id="nav-menu-trigger2"></span></a>
-					<a style="cursor: pointer;" class="accesoClientes menu-toggle flip pull-right all-caps" id="accesoClientes" onclick="accesar(this)">Acceso Clientes</a>
+					<a style="cursor: pointer;" class="accesoClientes menu-toggle flip pull-right all-caps" id="accesoClientes">Acceso Clientes</a>
 					<div id="login" name="login" style="background: #fff; text-align:center;" class="login col-md-3 col-sm-5 col-md-offset-8 col-sm-offset-6"> 
 						<input name="compania" id="nom_compania_login" placeholder="Nombre de tu empresa" type="text"></input>
-						<a class="cta cta-default all-caps" id="login_btn">Login</a> 
+						<a class="cta cta-default all-caps " id="login_btn">Login</a> 
 					</div>
 					<!-- Menu Toggle -->
 
@@ -185,7 +185,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			<li><a id="menu_contadores" href="/contadores/">CONTADORES</a></li>
 		</ul>
 		<!--/ .main-nav -->
+		<div id = "divLoginMobile">
 		<a style="cursor: pointer;" class="menu-toggle flip pull-right all-caps" id="accesoClientesMobile" onClick="">Acceso Clientes</a>
+		</div>
+		<div id="loginMobile" name="login" style="background: #fff; text-align:center;"> 
+			<input name="compania" id="nom_compania_login" placeholder="Nombre de tu empresa" type="text"></input>
+			<a class="cta cta-default all-caps" id="login_btn">Login</a> 
+		</div>
 
 	</nav>
 	<!--
@@ -1193,16 +1199,60 @@ $(function(){
 
 	<script type="text/javascript">
 		
-	function accesar(elemento){
-		if($(elemento).parent().parent().parent().parent().hasClass("header-clone")){
-			$(".header-clone #login").show();
-		}
-		else{
-			$(".the-origin-header #login").show();
-		}
-	}
+	
 
-		
+		$(document).on('click', function(e) {
+			if ( $(e.target).closest('.the-origin-header #accesoClientes').length ) {
+				$(".the-origin-header #login").show();
+			}else if ( ! $(e.target).closest('.the-origin-header #login').length ) {
+				$('.the-origin-header #login').hide();
+			}
+			if ( $(e.target).closest('.header-clone #accesoClientes').length ) {
+				$(".header-clone #login").show();
+			}else if ( ! $(e.target).closest('.header-clone #login').length ) {
+				$('.header-clone #login').hide();
+			}
+			if ( $(e.target).closest('#accesoClientesMobile').length ) {
+				$("#nav-menu-trigger").click();
+				$("#divLoginMobile").hide();
+				$("#loginMobile").css('display','inline-block');
+			}else if ( ! $(e.target).closest('#loginMobile').length ) {
+				$('#loginMobile').hide();
+				$("#divLoginMobile").show();
+			}
+			if ( $(e.target).closest('#loginMobile #nom_compania_login').length ) {
+				$("#nav-menu-trigger").click();
+				$("#divLoginMobile").hide();
+				$("#loginMobile").css('display','inline-block');
+			}
+			if ( $(e.target).closest('#loginMobile #login_btn').length ) {
+				var valor= $('#loginMobile #nom_compania_login').val()
+				//hacer validación usuario API
+				if($('#loginMobile #nom_compania_login').val()!=""){
+					window.open("https://"+valor+".winik.mx",'_blank');
+					$('#loginMobile #nom_compania_login').val("");
+				}
+			}
+			if ( $(e.target).closest('.the-origin-header #login_btn').length ) {
+				var valor= $('.the-origin-header #nom_compania_login').val()
+				//hacer validación usuario API
+				if($('.the-origin-header #nom_compania_login').val()!=""){
+					window.open("https://"+valor+".winik.mx",'_blank');
+					$('.the-origin-header #nom_compania_login').val("");
+					$('.the-origin-header #login').hide();
+				}
+			}
+			if ( $(e.target).closest('.header-clone #login_btn').length ) {
+				var valor= $('.header-clone #nom_compania_login').val()
+				//hacer validación usuario API
+				if($('.header-clone #nom_compania_login').val()!=""){
+					window.open("https://"+valor+".winik.mx",'_blank');
+					$('.header-clone #nom_compania_login').val("");
+					$('.header-clone #login').hide();
+				}
+			}
+
+		});
 		
 		function crear_empresa(variable) {
 			if (variable == 1) {

@@ -3431,6 +3431,9 @@ td {
         width:80% !important;
         margin-top: 40% !important;
     }
+    .nav-wrapper-opened{
+        position: absolute !important;
+    }
 }
 ::selection {
     color: #fff;

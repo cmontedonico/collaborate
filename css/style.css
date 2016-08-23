@@ -3715,3 +3715,8 @@ td {
   display: table-cell;
   vertical-align: top;
 }
+
+#left-div-home{
+    background: url(../images/back_winik.png);
+    background-size: cover;
+}

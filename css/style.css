@@ -1617,6 +1617,7 @@ a.menu-toggle span {
 }
 
 #home {
+    
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -3345,7 +3346,7 @@ td {
     display: inline-block;
     height: 41.71px;
     padding: 8px 8px;
-    width: 30%;
+    width: 50%;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
 }
@@ -3720,6 +3721,22 @@ td {
 }
 
 #left-div-home{
-    background: url(../images/back_winik.png);
+    background: url(../images/back_winik.png) center left no-repeat;
     background-size: cover;
+}
+
+#nom_compania::-webkit-input-placeholder {
+   text-align: center;
+}
+
+#nom_compania:-moz-placeholder { /* Firefox 18- */
+   text-align: center;  
+}
+
+#nom_compania::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;  
+}
+
+#nom_compania:-ms-input-placeholder {  
+   text-align: center; 
 }

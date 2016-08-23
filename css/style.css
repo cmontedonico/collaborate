@@ -1428,6 +1428,9 @@ header {
     padding: 0 0;
     height: 50px;
 }
+.the-origin-header{
+    border-bottom: solid 1px #777; 
+}
 
 .the-origin-header a.logo {
     display: inline-block;
@@ -1617,7 +1620,7 @@ a.menu-toggle span {
 }
 
 #home {
-    
+    background: url(../images/back_winik.png);
     position: relative;
     overflow: hidden;
     padding: 0;
@@ -1694,7 +1697,8 @@ a.menu-toggle span {
 .hero-content h1{
     text-align: left;
     color: #000;
-    font-size: 35px;
+    font-size: 31px;
+    text-shadow: none !important;
 }
 
 .hero-content h2{
@@ -1869,8 +1873,8 @@ a.menu-toggle span {
 }
 
 #home .scroll-link {
-    color: #777;
-    font-size: 30px;
+    color: #e74260;
+    font-size: 65px;
     display: inline-block;
     margin-top: 88px;
 }
@@ -3720,10 +3724,6 @@ td {
   vertical-align: top;
 }
 
-#left-div-home{
-    background: url(../images/back_winik.png) center left no-repeat;
-    background-size: cover;
-}
 
 #nom_compania::-webkit-input-placeholder {
    text-align: center;

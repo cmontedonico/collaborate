@@ -137,7 +137,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 				<div class="col-lg-12">
 
-					<a href="#home" class="logo"><img src="images/Winik_logotipo.svg" alt="Winik Logo"></a>
+					<a href="#home" class="logo"></a>
 					<!-- Your Logo -->
 					
 					<a href="#0" id="nav-menu-trigger" class="menu-toggle flip pull-right all-caps">Men&uacute;<span class="icon-menu5" id="nav-menu-trigger2"></span></a>
@@ -224,54 +224,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 							<!-- BEGIN Hero Content -->
 							<div class="hero-content row centered">
-								<div class="col-lg-7">
-
+								<div class="col-lg-12" style="padding:0;">
 									<br><br>
-									<p class="lead all-caps text-shadow-small margin-bot-30">
-										<br><br>
-										<h1 class="text-shadow-medium" data-sr="enter bottom over 1s and move 50px wait 0.3s" style="font-family:'Montserrat',sans-serif;">Simplifica tu n&oacute;mina y gesti&oacute;n del IMSS</h1>
-										<!-- BEGIN Animated/Rotating Headline -->
-										<h3 class="all-caps animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s">
-											<span style="font-size:22px">
-												<b class="is-visible"></b>
-												<b>La plataforma en la nube para tus recursos humanos</b>
-											</span> <!--/ .animated-words-wrapper -->
-										</h3>
-										<!--/ END Animated/Rotating Headline -->
-
-										<ul class="inline-cta">
-											<li data-sr="enter left  over 1s wait 0.3s" style="width:100%;">
-												<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
-												<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Crear Empresa</a>
-												<br>
-												<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px; display:none;" id="empresa_requerida">Campo requerido</b>
-											</li>
+										<p class="lead all-caps text-shadow-small margin-bot-30">
+									<div class="col-lg-7" style="padding:0;">
 											<br><br>
-											<li data-sr="enter left  over 1s wait 0.3s">
-												<a style="cursor: pointer; margin-top: 0;" id="boton-play" class="cta boton-play material-icons" data-video-id="DsYcwIO11qo" ><i id="boton-play" class="material-icons" style="font-size: 30px;">play_arrow</i></a>
-												<b id="btn_play" style="letter-spacing: 0px; font-weight: 700; font-size: 18px;">Ve c&oacute;mo funciona</b>
+											<h1 data-sr="enter bottom over 1s and move 50px wait 0.3s" style="font-family:'Montserrat',sans-serif;">Todas tus n&oacute;minas en un solo lugar</h1>
+											<!-- BEGIN Animated/Rotating Headline -->
+											<h2 class="animated-headline slide" data-sr="enter bottom over 1s and move 50px wait 0.3s">
+												Winik es la plataforma en la nube para gestionar tus Recursos Humanos
+											</h2>
+											<!--/ END Animated/Rotating Headline -->
 
-											</li>
+											<ul class="inline-cta">
+												<li data-sr="enter left  over 1s wait 0.3s" style="width:100%;">
+													<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
+													<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Crear Empresa</a>
+													<br>
+													<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px; display:none;" id="empresa_requerida">Campo requerido</b>
+												</li>
+												<br><br>
+												<br><br><br>
+												<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('menu_contadores')" id="eres_despacho">Haz clic aqu&iacute;.</a></h3>
+											</ul>
+											<!--/ .inline-cta -->
 
+											
 
-
-
-											<br><br><br>
-											<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('menu_contadores')" id="eres_despacho">Haz clic aqu&iacute;.</a></h3>
-										</ul>
-										<!--/ .inline-cta -->
-
-										<a href="#que_hace_winik" onclick="ponUrl($(this).attr('href'))" class="scroll-to scroll-link"><span class="icon-chevron-thin-down" data-sr="enter top top 1s and move 50px wait 0.3s"></span></a>
-
+									</div>
+									<!--/ .col-lg-7 -->
+									<div class="col-lg-5 " style="padding:0;">
+										<a style="cursor: pointer; margin-top: 0;" id="video_winik" data-video-id="DsYcwIO11qo" >
+										<img src="images/video_winik.png" id="video_winik"></img></a>
+									</div>
+									<!--/ .col-lg-5 -->	
+									<a href="#que_hace_winik" onclick="ponUrl($(this).attr('href'))" class="scroll-to scroll-link"><span class="icon-chevron-thin-down" data-sr="enter top top 1s and move 50px wait 0.3s"></span></a>
 								</div>
-								<!--/ .col-lg-7 -->
-								<div class=".col-lg-5">
-									<br><br>
-									<p class="lead all-caps text-shadow-small margin-bot-30">
-										<br><br>
-								<p>Hola Miguel</p>
-								</div>
-								<!--/ .col-lg-5 -->	
+								<!-- col-lg-12 -->
 							</div>
 							<!--/ .row -->
 							<!-- END Hero Content -->
@@ -1200,7 +1189,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script>
 $(function(){
-        $("#boton-play").jqueryVideoLightning({
+        $("#video_winik").jqueryVideoLightning({
             autoplay: true,
 			controls: 1,
 			ivLoadPolicy: 3,

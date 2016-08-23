@@ -237,18 +237,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 											<!--/ END Animated/Rotating Headline -->
 
 											<ul class="inline-cta">
+												<li data-sr="enter left  over 1s wait 0.3s" style="width:100%; text-align:center; color:#000; font-family:'Montserrat',sans-serif; font-size:20px;">
+												¡COMIENZA YA!
+												</li>
 												<li data-sr="enter left  over 1s wait 0.3s" style="width:100%;">
-													<input name="compania" class="form-control" id="nom_compania" placeholder="Nombre de tu empresa" type="text">
-													<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Crear Empresa</a>
+													<input name="compania" class="form-control" id="nom_compania" placeholder="Tu empresa" type="text">
+													<a style="cursor: pointer;" class="cta cta-default all-caps" id="crear_empresa" onClick="crear_empresa(1)">Reg&iacute;strate</a>
 													<br>
 													<b style="letter-spacing: 0px; font-weight: 700; color:red; font-size: 14px; display:none;" id="empresa_requerida">Campo requerido</b>
 												</li>
-												<br><br>
-												<br><br><br>
-												<h3 style="font-size:18px; font-family:'Montserrat',sans-serif;"> ¿Eres despacho? <a style="cursor: pointer; font-weight: bold;" onclick="clickAn('menu_contadores')" id="eres_despacho">Haz clic aqu&iacute;.</a></h3>
+												<li data-sr="enter left  over 1s wait 0.3s" style="width:100%; text-align:center; color:#000; font-family:'Montserrat',sans-serif; font-size:20px;">
+												¿Ya tienes tu <a style="cursor:pointer" id="cuenta_login"> cuenta</a>?
+												</li>
 											</ul>
 											<!--/ .inline-cta -->
-
+												<h3 style="font-size:18px; font-family:'Montserrat',sans-serif; color: #000; margin-top:35px;"> ¿Eres despacho? 
+													<br> 
+													<a style="cursor: pointer; font-weight: bold;" onclick="clickAn('menu_contadores')" id="eres_despacho">Haz clic aqu&iacute;.
+														</a></h3>
 											
 
 									</div>
@@ -1188,6 +1194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="src/videoLightning.js"></script>
 
 <script>
+
 $(function(){
         $("#video_winik").jqueryVideoLightning({
             autoplay: true,
@@ -1210,7 +1217,7 @@ $(function(){
 	
 
 		$(document).on('click', function(e) {
-			if ( $(e.target).closest('.the-origin-header #accesoClientes').length ) {
+			if ( $(e.target).closest('.the-origin-header #accesoClientes').length || $(e.target).closest('#cuenta_login').length ) {
 				$(".the-origin-header #login").show();
 			}else if ( ! $(e.target).closest('.the-origin-header #login').length ) {
 				$('.the-origin-header #login').hide();

@@ -1430,6 +1430,7 @@ header {
 }
 .the-origin-header{
     border-bottom: solid 1px #777; 
+    background: #fff;
 }
 
 .the-origin-header a.logo {
@@ -1620,7 +1621,7 @@ a.menu-toggle span {
 }
 
 #home {
-    background: url(../images/back_winik.png);
+    background: #F9F3E4;
     position: relative;
     overflow: hidden;
     padding: 0;

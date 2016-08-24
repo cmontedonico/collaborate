@@ -1215,6 +1215,25 @@ $(function(){
 
 
 	<script type="text/javascript">
+
+		$(document).on('keyup', function(e) {
+			if ( $(e.target).closest('.header-clone #nom_compania_login').length ) {
+				if(e.keyCode==13){
+					$('.header-clone #login_btn').click();
+				}
+			}
+			if ( $(e.target).closest('.the-origin-header #nom_compania_login').length ) {
+				if(e.keyCode==13){
+					$('.the-origin-header #login_btn').click();
+				}
+			}
+			if ( $(e.target).closest('#loginMobile #nom_compania_login').length ) {
+				if(e.keyCode==13){
+					$('#loginMobile #login_btn').click();
+				}
+			}
+
+		});
 	
 
 		$(document).on('click', function(e) {

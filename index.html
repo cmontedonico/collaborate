@@ -250,6 +250,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												¿Ya tienes tu <a style="cursor:pointer" id="cuenta_login"> cuenta</a>?
 												</li>
 											</ul>
+											<div style="text-align:left; padding-left: 10px;">
+											<a style="cursor: pointer;" class="cta cta-default all-caps" id="request_demo">solicita un demo</a>
+											</div>	
 											<!--/ .inline-cta -->
 												<h3 style="font-size:18px; font-family:'Montserrat',sans-serif; color: #000; text-align:left;"> ¿Eres despacho? 
 													<br> 
@@ -1124,6 +1127,24 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	</div>
 
 
+	<!-- The Modal -->
+	<div id="modalDemo" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close" id="close_demo">x</span>
+		Para un demo, solamente d&eacute;janos tus datos y nosotros nos ponemos en contacto contigo
+		<br>
+		<form id="Demo">
+		<input name="compania" class="form-control" id="nom_compania_demo" placeholder="Nombre de tu empresa" type="text">
+		<input name="contacto" class="form-control" id="nom_contacto_demo" placeholder="Nombre de contacto" type="text">
+		<input name="contacto" class="form-control" id="mail_contacto_demo" placeholder="Correo de contacto" type="email">
+		<input name="contacto" class="form-control" id="nom_contacto_demo" placeholder="Tel&eacute;fono de contacto" type="tel">
+		</form>
+	</div>
+
+	</div>
+
+
 
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
@@ -1233,6 +1254,16 @@ $(function(){
 				}
 			}
 
+		});
+
+		$('#request_demo').click(function(){
+			var cerrar = document.getElementById("close_demo");
+			var modal = document.getElementById('modalDemo');
+			modal.style.display = "block";
+			window.onclick = function(event) {
+			if (event.target == modal || event.target==cerrar)
+				modal.style.display = "none";
+			}
 		});
 	
 

@@ -1,2 +1,8 @@
 User-agent: *
-Disallow: 
+Disallow: /blog/index.php/tag/outsourcing
+Disallow: /blog/index.php/tag/imss
+Disallow: /blog/index.php/tag/idse
+Disallow: /blog/index.php/tag/sipare
+Disallow: /blog/index.php/tag/sua
+Disallow: /blog/index.php/tag/2-y-3-sobre-nomina
+Disallow: /blog/index.php/tag/finiquito

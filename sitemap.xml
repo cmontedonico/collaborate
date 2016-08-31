@@ -1,175 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://www.winik.mx/</loc>
-  <lastmod>2016-06-20T17:09:39+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/contadores/</loc>
-  <lastmod>2016-06-20T17:10:04+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.winik.mx/aviso_privacidad.html</loc>
-  <lastmod>2016-06-16T20:11:19+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.winik.mx/acerca.html</loc>
-  <lastmod>2016-06-16T20:11:16+00:00</lastmod>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/busqueda-y-reclutamiento/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/finiquito/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/idse/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/outsourcing/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/sipare/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/sua/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/3-errores-idse/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/error-37/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/errores-idse/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/genkey-cab/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/javapolicy-exe/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/para-lograr-un-onboarding-exitoso/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/category/onboarding/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/alta/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/iniciacion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/integracion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/onboarding/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/proceso-de-integracion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/todo-sobre-los-finiquitos/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/los-6-pasos-contratar-talento/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/atraccion-de-talento/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/busqueda-de-talento/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/contratar-talento/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/afiliar-tus-trabajadores-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/afiliacion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/afiliacion-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/alta-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/dar-de-alta-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/preafiliacion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/preafiliacion-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/preregistro-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/dar-de-alta-trabajadores-imss/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/alta-patron/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/alta-patronal/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/todo-sobre-el-outsourcing/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/definicion-outsourcing/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/outsourcing/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/que-es-outsourcing/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/todo-lo-tienes-que-saber-sobre-el-sua/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/sistema-unico-de-autodeterminacion/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/sua/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/tramites-sua/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/todo-lo-tienes-que-saber-sobre-el-sipare/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/sipare/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/sistema-de-pago-referenciados/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/todo-sobre-el-idse/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/idse/</loc>
-</url>
-<url>
-  <loc>http://www.winik.mx/blog/index.php/tag/que-es-el-idse/</loc>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url><loc>http://winik.mx/</loc><lastmod>2016-08-31T12:13:20+00:00</lastmod><changefreq>daily</changefreq><priority>1.00</priority></url>
+<url><loc>http://www.winik.mx/blog/</loc><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://winik.mx/contadores/</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://winik.mx/aviso_privacidad.html</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://winik.mx/acerca.html</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.85</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/reclutamiento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/contratacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/desarrollo-y-retencion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/beneficios/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/nomina-e-impuestos/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/comunicacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/desempeno/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/separacion-y-despidos/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/base-de-conocimiento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/mejores-practicas/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/guias/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/trivias/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/reclutamiento/reclutamiento-y-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/contratacion/outsourcing/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/contratacion/imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/desarrollo-y-retencion/onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/nomina-e-impuestos/idse/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/nomina-e-impuestos/sipare/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/nomina-e-impuestos/sua/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/nomina-e-impuestos/2-y-3-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/separacion-y-despidos/finiquito/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tipos-de-evaluacion-laboral/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/category/desarrollo-y-retencion/retencion-de-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tips-para-retener-tu-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/evaluacion-del-personal/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/desarrollo-laboral/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/desempeno/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/evaluacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/recursos-humanos-101/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/guia-esquemas-nomina-en-mexico/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/guia-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/objetivos-empresa/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/retencion-de-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/midiendo-los-resultados-del-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/kpi-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/kpis-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/medicion-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/medir-onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/onboarding/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/los-distintos-esquemas-nomina-en-mexico/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-sobre-el-impuesto-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/2-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/2-y-3-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/3-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/impuesto-sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/sobre-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/esquemas-de-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/tipos-de-nomina/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/page/2/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/afiliacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/afiliacion-imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/alta-imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/alta-patron/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/alta-patronal/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/atraccion-de-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/busqueda-de-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/contratar-talento/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/dar-de-alta-imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/definicion-outsourcing/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/error-37/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/errores-idse/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/finiquito/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/genkey-cab/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/idse/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/iniciacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/integracion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/javapolicy-exe/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/liquidacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/outsourcing/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/preafiliacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/preafiliacion-imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/preregistro-imss/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/proceso-de-integracion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/que-es-el-idse/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/que-es-outsourcing/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/sipare/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/sistema-de-pago-referenciados/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/sistema-unico-de-autodeterminacion/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/sua/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/tramites-sua/</loc><changefreq>daily</changefreq><priority>0.69</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/los-6-pasos-contratar-talento/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/afiliar-tus-trabajadores-imss/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/dar-de-alta-trabajadores-imss/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-sobre-el-outsourcing/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/para-lograr-un-onboarding-exitoso/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/3-errores-idse/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-lo-tienes-que-saber-sobre-el-sua/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-lo-tienes-que-saber-sobre-el-sipare/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-sobre-el-idse/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/todo-sobre-los-finiquitos/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/base_de_conocimiento/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx/blog/index.php/tag/mejores_practicas/</loc><changefreq>daily</changefreq><priority>0.56</priority></url>
+<url><loc>http://www.winik.mx</loc><lastmod>2016-08-31T12:13:20+00:00</lastmod><changefreq>daily</changefreq><priority>0.46</priority></url>
+<url><loc>http://www.winik.mx/contadores/</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.winik.mx/aviso_privacidad.html</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.38</priority></url>
+<url><loc>http://www.winik.mx/acerca.html</loc><lastmod>2016-08-19T13:11:01+00:00</lastmod><changefreq>daily</changefreq><priority>0.38</priority></url>
+<!-- Generated by www.web-site-map.com -->
 </urlset>

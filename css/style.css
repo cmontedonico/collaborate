@@ -3475,7 +3475,7 @@ td {
 
 #blog_winik{
     background: url("../images/hero_blog.png") no-repeat top;
-    background-color: #F9F3E4  ;
+    background-color: #E1E1E1  ;
     background-size: contain;
     padding-top: 20px; 
 }
@@ -3501,7 +3501,7 @@ td {
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #E8E2D5;
+    background-color: #E1E1E1;
     margin: 10% auto; /* 15% from the top and centered */
     padding: 20px;
     width: 30%; /* Could be more or less, depending on screen size */

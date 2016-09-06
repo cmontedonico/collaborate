@@ -6,3 +6,6 @@ Disallow: /blog/index.php/tag/sipare
 Disallow: /blog/index.php/tag/sua
 Disallow: /blog/index.php/tag/2-y-3-sobre-nomina
 Disallow: /blog/index.php/tag/finiquito
+Disallow: /blog/index.php/dwqa-ask-question/
+Disallow: /blog/index.php/dwqa-questions/
+Disallow: /blog/index.php/questions/

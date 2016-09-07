@@ -1281,7 +1281,11 @@ $(function(){
 					$('#loginMobile #login_btn').click();
 				}
 			}
-
+			if ( $(e.target).closest('#nom_compania').length ) {
+				if(e.keyCode==13){
+					$('#crear_empresa').click();
+				}
+			}
 		});
 
 		$('#request_demo').click(function(){

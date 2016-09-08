@@ -1460,7 +1460,7 @@ $(function(){
 
 
 		$(window).load(function() {
-			if((getCookie("mailUsuarioWinik") != "" || getCookie("usuarioWinik") != "") && !checkMobile())
+			if(getCookie("mailUsuarioWinik") == "" && getCookie("usuarioWinik") != "" && !checkMobile())
 				setTimeout(popup, 10000);
 		
 			$('.flexslider').flexslider({

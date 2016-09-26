@@ -259,7 +259,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 												</li>
 											</ul>
 											<div style="text-align:left; padding-left: 10px;">
-											<a style="cursor: pointer;" class="cta cta-default all-caps" id="request_demo">solicita un demo</a>
+											<a style="cursor: pointer;" class="cta cta-default all-caps" id="request_demo" href="http://eepurl.com/cdBiV1" target="_blank">solicita un demo</a>
 											</div>	
 											<!--/ .inline-cta -->
 												<h3 style="font-size:18px; font-family:'Montserrat',sans-serif; color: #000; text-align:left;"> ¿Eres despacho? 
@@ -1288,15 +1288,15 @@ $(function(){
 			}
 		});
 
-		$('#request_demo').click(function(){
-			var cerrar = document.getElementById("close_demo");
-			var modal = document.getElementById('modalDemo');
-			modal.style.display = "block";
-			window.onclick = function(event) {
-			if (event.target == modal || event.target==cerrar)
-				modal.style.display = "none";
-			}
-		});
+	//	$('#request_demo').click(function(){
+	//		var cerrar = document.getElementById("close_demo");
+	//		var modal = document.getElementById('modalDemo');
+	//		modal.style.display = "block";
+	//		window.onclick = function(event) {
+	//		if (event.target == modal || event.target==cerrar)
+	//			modal.style.display = "none";
+	//		}
+	//	});
 	
 
 		$(document).on('click', function(e) {

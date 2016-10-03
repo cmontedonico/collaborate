@@ -1173,6 +1173,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
+	<!-- The Modal -->
+	<div id="modalTipoUsuario" class="modal">
+	<!-- Modal content -->
+	<div class="modal-content">
+		<span class="close" id="close_popupTipoUsuario">x</span>
+		<div style= "text-align:center; top:20%; position:absolute; width: 100%; font-size: 35px; color:#777; left:0;">
+			¿Eres Contador?
+			<br>
+			<i style="font-size: 30px; color:#777;"> Queremos personalizar tu experiencia </i>
+			</div>
+		<div style="position:absolute; bottom:10%; text-align:center; width:100%; left:0;">
+		<table style="width:100%;">
+			<tr>
+		<td style="border: none;"><button id="btn_TipoUsuarioContador" class="submit-btn" onclick="tipoUsuario('contador')">Sí</button></td>
+		<td style="border: none;"><button id="btn_TipoUsuarioEmpresa" class="submit-btn"  onclick="tipoUsuario('empresa')">No</button></td>
+			</tr>
+			<tr> 
+				<td style="border: none; padding-top:0;">Ll&eacute;vame a Winik para Contadores</td>
+				<td style="border: none; padding-top:0;">Quedarme en Winik para Empresas</td>
+			</tr>
+		</div>
+	</div>
+
+	</div>
+
 
 	<!-- The Modal -->
 	<div id="myModal" class="modal">
@@ -1244,6 +1269,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<script src="src/videoLightning.js"></script>
 
 <script>
+	function tipoUsuario(tipo){
+		document.cookie = "tipoUsuario="+tipo+"; expires=Thu, 31 Dec 2018 12:00:00 UTC; path=/";
+			location.reload();
+	}
 
 $(function(){
         $("#video_winik").jqueryVideoLightning({
@@ -1460,8 +1489,16 @@ $(function(){
 
 
 		$(window).load(function() {
-			if(getCookie("mailUsuarioWinik") == "" && getCookie("usuarioWinik") != "" && !checkMobile())
-				setTimeout(popup, 10000);
+			if(getCookie("tipoUsuario") =="contador"){
+				location.replace("http://www.winik.mx/contadores");
+			}
+
+			if(getCookie("tipoUsuario") == "" && !checkMobile()){
+				popupTipoUsuario()
+			}
+
+			if(getCookie("mailUsuarioWinik") == "" && getCookie("usuarioWinik") == "" && !checkMobile())
+				setTimeout(popup, 30000);
 		
 			$('.flexslider').flexslider({
 				animation: "slide",
@@ -1513,6 +1550,19 @@ $(function(){
 		function popup(){
 			var cerrar = document.getElementById("close_popup");
 			var modal = document.getElementById('myModal');
+			 modal.style.display = "block";
+			 cerrar.onclick = function() {
+   			 					modal.style.display = "none";
+							}
+			window.onclick = function(event) {
+    		if (event.target == modal) {
+        		modal.style.display = "none";
+			}}
+		}
+
+		function popupTipoUsuario(){
+			var cerrar = document.getElementById("close_popupTipoUsuario");
+			var modal = document.getElementById('modalTipoUsuario');
 			 modal.style.display = "block";
 			 cerrar.onclick = function() {
    			 					modal.style.display = "none";

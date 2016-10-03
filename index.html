@@ -1526,13 +1526,16 @@ $(function(){
 		var nombre = document.getElementsByName("your-name")[0].value;
 		var mail = document.getElementsByName("email-520")[0].value;
 		var modal = document.getElementById('myModal');
-		if(nombre!= "" && mail!=0){
-			 $.post("http://winik.mx/contact.php",
-				{
-					name: nombre,
-					email: mail
-				});
-				var d=new Date();
+		if(nombre!= "" && mail!=""){
+			theUrl = "/mailchimp_nl.php?email="+mail+"&NAME="+nombre;
+			xmlHttp = new XMLHttpRequest();
+    		xmlHttp.onreadystatechange = function() { 
+			if (xmlHttp.readyState == 4)
+				console.log(xmlHttp.responseText);
+			}
+    		xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    		xmlHttp.send(null);
+			 	var d=new Date();
 				d.setTime(d.getTime() + (90*24*60*60*1000));
 				var expires = "expires="+ d.toUTCString();
 				document.cookie = "usuarioWinik=" + nombre +";" + expires;

@@ -1614,7 +1614,7 @@ a.menu-toggle span {
     position: relative;
     overflow: hidden;
     padding: 0;
-    height: 100vh;
+    height: auto;
     color: #fff;
 }
 
@@ -1667,7 +1667,7 @@ a.menu-toggle span {
 }
 
 #home .container {
-    height: 100vh;
+    height: auto;
 }
 
 .hero-content p.lead {
@@ -1850,7 +1850,7 @@ a.menu-toggle span {
     color: #fff;
     font-size: 30px;
     display: inline-block;
-    margin-top: 88px;
+    margin-top: 10px;
 }
 
 a.scroll-link:hover {
@@ -3381,11 +3381,10 @@ td {
         font-family: "Montserrat", sans-serif;
         margin-bottom: 10px;
     }
-    #home {
-        height: 700px;
-    }
-    #home .container {
-        height: 700px;
+   
+    .row-centered{
+    text-align: center;
+    display: inline-block !important;
     }
 }
 
@@ -3413,4 +3412,51 @@ td {
 #blog_winik .section-heading {
     margin-top: 80px;
     margin-bottom: 20px;
+}
+
+
+.tabla_wrap{
+    display: table;
+    overflow: hidden;
+    border-collapse: collapse;
+    width:80%; 
+    margin-left:auto; 
+    margin-right:auto; 
+    
+}
+
+.tabla_celda:before {
+  content: "\2022";
+  padding-right: 0.5em;
+}
+
+.tabla_celda{
+    display: table-cell !important;
+    margin:0;
+    width: 50%;
+    list-style:inside;
+    vertical-align: middle;
+    text-align: left;
+    padding: 10px;
+}
+
+#entrada{
+    margin-top: 50px;
+}
+.row-centered{
+    text-align: center;
+    display: flex;
+}
+.col-centered {
+    
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    vertical-align: top;
+}
+
+#entrada img{
+    height: 50px;
+    vertical-align: super;
 }

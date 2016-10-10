@@ -35,7 +35,7 @@ body {
     background: #fff;
     color: #777;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html * {
@@ -1424,13 +1424,20 @@ header {
     right: 0;
     left: 0;
     z-index: 500;
-    padding: 37px 0;
+    padding: 0px 0;
     height: 50px;
+}
+.the-origin-header{
+    border-bottom: solid 1px #777; 
+    background: #fff;
 }
 
 .the-origin-header a.logo {
     display: inline-block;
-    margin-top: -8px;
+    height: 32px;
+    width: 85px;
+    background: url(../images/Winik_logotipo_negro.svg);
+    margin-top: 9px;
 }
 
 .header-clone {
@@ -1444,6 +1451,14 @@ header {
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     transform: translateY(-100%);
+}
+
+.header-clone a.logo {
+    display: inline-block;
+    height: 32px;
+    width: 85px;
+    background: url(../images/Winik_logotipo.svg);
+    background-size: cover;
 }
 
 .header-stick {
@@ -1465,7 +1480,7 @@ header {
 
 a.menu-toggle {
     padding: 14px 0;
-    color: #fff;
+    color: #777;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
 }
@@ -3440,9 +3455,6 @@ td {
     padding: 10px;
 }
 
-#entrada{
-    margin-top: 50px;
-}
 .row-centered{
     text-align: center;
     display: flex;
@@ -3459,4 +3471,10 @@ td {
 #entrada img{
     height: 50px;
     vertical-align: super;
+}
+
+#entrada b{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-
+ 
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -43,6 +43,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/style-responsive.css">
 	<link rel="stylesheet" href="css/expandableGallery.css">
+	 
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -146,7 +147,7 @@
 
 				<div class="col-lg-12">
 
-					<a href="#home" class="logo"><img src="images/Winik_logotipo.svg" alt="Winik Logo"></a>
+					<a href="#home" class="logo"></a>
 					<!-- Your Logo -->
 
 					<a href="#0" id="nav-menu-trigger" class="menu-toggle flip pull-right all-caps">Men&uacute;<span class="icon-menu5"></span></a>
@@ -235,19 +236,29 @@
 										</h3>
 
 										<!--/ END Animated/Rotating Headline -->
-
-										<div id="entrada" class="row-centered">
+										<div class="col-lg-12" style="margin-top:0px;">
+												<p style="margin-bottom:30px;">En Winik garantizamos:</p>
+											</div>
+										<div id="entrada" class="col-md-12 row-centered">
+											
+											
 											<div class="col-md-4 col-sm-12 col-centered">
 												<span><img src="images/icons/quality.svg"> </img></span>
+												<br>
+												<b>Calidad</b>
 												<p>Garantizamos la calidad del proceso de n&oacute;mina</p>
 											</div>
 											<div class="col-md-4 col-sm-12 col-centered">
 												<img src="images/icons/simplify.svg">
+												<br>
+												<b>Eficiencia</b>
 												<p>Eliminamos la doble captura de incidencias</p>
 											</div>
 											<div class="col-md-4 col-sm-12 col-centered">
 												<img src="images/icons/allinone.svg">
-												<p>Eliminamos la necesidad de realizar movimientos afiliatorios directo en la plataforma del IMSS </p>
+												<br>
+												<b>Automatizaci&oacute;n</b>
+												<p>Movimientos afiliatorios sin necesidad de entrar al IMSS</p>
 											</div>
 										</div>
 
@@ -663,14 +674,14 @@
 					<!-- BEGIN Contact Form -->
 					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
 
-						<form class="contact-form" id="contact-form" method="post">
+						<form class="contact-form" id="contact-form" action="http://winik.us13.list-manage.com/subscribe/post?u=e8bc809b99cbc94b04c041189&amp;id=aa59fa6509" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
 							<div class="row">
 
 								<div class="col-lg-12 col-md-12">
 
 									<div class="required-field">
-										<input name="name" id="name" class="contact-input" type="text" placeholder="Nombre completo">
+										<input name="DSPCHO" id="mce-DSPCHO" class="contact-input" type="text" placeholder="Nombre de tu despacho">
 									</div>
 									<!--/ .required-field -->
 
@@ -680,7 +691,16 @@
 								<div class="col-lg-12 col-md-12">
 
 									<div class="required-field">
-										<input name="email" id="email" class="contact-input" type="email" placeholder="Email">
+										<input name="CNAME" id="mce-CNAME" class="contact-input" type="text" placeholder="Nombre de contacto">
+									</div>
+									<!--/ .required-field -->
+
+								</div>
+								<!--/ .col-lg-6 -->
+								<div class="col-lg-12 col-md-12">
+
+									<div class="required-field">
+										<input name="EMAIL" id="mce-EMAIL" class="contact-input" type="email" placeholder="Email">
 									</div>
 									<!--/ .required-field -->
 
@@ -689,34 +709,137 @@
 
 								<div class="col-lg-12 col-md-12">
 									<div class="required-field">
-										<input name="company" id="company" class="contact-input" type="text" placeholder="Nombre de la empesa">
+										<input name="PHONE" id="mce-PHONE" class="contact-input" type="tel" placeholder="Tel&eacute;fono">
 									</div>
 								</div>
-								<!--/ .col-lg-12 -->
 
 								<div class="col-lg-12 col-md-12">
-									<p>¿Qu&eacute; cargo tienes?</p>
+									<p>Tiempo de operación de tu despacho</p>
 									<div class="required-field">
-										<select name="position" id="position" class="contact-input">
-													<option value="0"></option>
-													<option>Dueño</option>
-													<option>Gerente de Recursos Humanos</option>
-													<option>Contador Interno</option>
-													<option>Contador Independiente</option>
-													<option>Despacho Contable</option>
+										<select name="MMERGE9" id="mce-MMERGE9" class="contact-input">
+													<option value=""></option>
+													<option value="1-3 años">1-3 años</option>
+													<option value="3-5 años">3-5 años</option>
+													<option value="Más de 5 años">Más de 5 años</option>
+												</select>
+									</div>
+								</div>
+
+									<div class="col-lg-12 col-md-12">
+									<p>¿Cuántos clientes manejas?</p>
+									<div class="required-field">
+										<select name="MMERGE12" id="mce-MMERGE12" class="contact-input">
+													<option value=""></option>
+													<option value="1-10">1-10</option>
+													<option value="11-50">11-50</option>
+													<option value="51-100">51-100</option>
+													<option value="101-250">101-250</option>
+													<option value="250+">250+</option>
+
 												</select>
 									</div>
 								</div>
 
 								<div class="col-lg-12 col-md-12">
+									<p>Número de empleados promedio de tus clientes</p>
 									<div class="required-field">
-										<input name="phone" id="phone" class="contact-input" type="tel" placeholder="Tel&eacute;fono">
+										<select name="MMERGE13" id="mce-MMERGE13" class="contact-input">
+													<option value=""></option>
+													<option value="1-10">1-10</option>
+													<option value="11-30">11-30</option>
+													<option value="31-60">31-60</option>
+													<option value="61-250">61-250</option>
+													<option value="250+">250+</option>
+
+												</select>
 									</div>
 								</div>
 
+								<div class="col-lg-12 col-md-12">
+									<p>¿Cuántos Noministas hay en tu despacho?</p>
+									<div class="required-field">
+										<select name="MMERGE10" id="mce-MMERGE10" class="contact-input">
+													<option value=""></option>
+													<option value="1-5">1-5</option>
+													<option value="5-10">5-10</option>
+													<option value="10+">10+</option>
+
+												</select>
+									</div>
+								</div>
+
+									<div class="col-lg-12 col-md-12">
+									<p>¿Cuántas licencias para Software de Nómina tienes?</p>
+									<div class="required-field">
+										<select name="MMERGE11" id="mce-MMERGE11" class="contact-input">
+													<option value=""></option>
+													<option value="Ninguna">Ninguna</option>
+													<option value="1-3">1-3</option>
+													<option value="3-5">3-5</option>
+													<option value="5-10">5-10</option>
+													<option value="10+">10+</option>
+
+												</select>
+									</div>
+								</div>
+
+									<div class="col-lg-12 col-md-12">
+									<p>¿Utilizas las plataformas IDSE y SUA del IMSS?</p>
+									<div class="required-field">
+										<ul><li><input type="radio" value="Si" name="MMERGE14" id="mce-MMERGE14-0"><label for="mce-MMERGE14-0">Si</label></li>
+										<li><input type="radio" value="No" name="MMERGE14" id="mce-MMERGE14-1"><label for="mce-MMERGE14-1">No</label></li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="col-lg-12 col-md-12">
+									<p>Tiempo promedio que tardas en calcular una nómina</p>
+									<div class="required-field">
+										<select name="MMERGE15" id="mce-MMERGE15" class="contact-input">
+													<option value=""></option>
+													<option value="1 hora">1 hora</option>
+													<option value="2 horas">2 horas</option>
+													<option value="Más de 2 horas">Más de 2 horas</option>
+
+												</select>
+									</div>
+								</div>
+									
+
+									<script type="text/javascript">
+									$(function() {
+										$.datepicker.setDefaults($.datepicker.regional['es']);
+										$('#mce-MMERGE7').datepicker({minDate:1,beforeShowDay: $.datepicker.noWeekends});
+										$("#mce-MMERGE7").datepicker( "option", "dateFormat", "yy-mm-dd" );
+									});
+									</script>
+
+								
+				
+
+								<div class="col-lg-12 col-md-12">
+									<p>Disponibilidad para Demo</p>
+									<div class="required-field">
+										  <input type="text" name="MMERGE7" id="mce-MMERGE7" class="contact-input" placeholder="Selecciona una fecha">
+								</div>
+								</div>
+
+
+							<div class="col-lg-12 col-md-12">
+
+									<div class="required-field">
+										<input name="MMERGE16" id="mce-MMERGE16" class="contact-input" placeholder="Hora para Demo (Hora CDMX 09:00 - 18:00)">
+									</div>
+									<!--/ .required-field -->
+
+								</div>
+								<!--/ .col-lg-6 -->
+
+
+
 								<div class="col-lg-12 col-md-12 all-caps centered">
 
-									<button id="submit" type="submit" class="submit-btn">Enviar</button>
+									<button id="submitRequestDemo" type="submit" class="submit-btn">Enviar</button>
 
 								</div>
 								<!--/ .col-lg-12 -->
@@ -803,6 +926,16 @@
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+ 
+  <script type="text/javascript" src="js/jquery.ui.datepicker-es.js"></script>
+  
+  
+  
+  
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

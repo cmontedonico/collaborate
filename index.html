@@ -1271,7 +1271,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>
 	function tipoUsuario(tipo){
 		document.cookie = "tipoUsuario="+tipo+"; expires=Thu, 31 Dec 2018 12:00:00 UTC; path=/";
-			location.reload();
+			if(tipo=="contador")
+				window.location.replace("http://winik.mx/contadores/");
 	}
 
 $(function(){
@@ -1489,10 +1490,6 @@ $(function(){
 
 
 		$(window).load(function() {
-			if(getCookie("tipoUsuario")=="contador"){
-				location.replace("http://www.winik.mx/contadores");
-			}
-
 			if(getCookie("tipoUsuario") == "" && !checkMobile()){
 				popupTipoUsuario()
 			}

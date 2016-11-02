@@ -1683,6 +1683,7 @@ $(function(){
   $(document).ready(function () {
     function addFormElem(paramName, fieldName) {
       var paramValue = getParameterByName(paramName);
+	  console.log(paramValue);
       var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
       if (paramValue != "") {
         $("form").first().prepend($utmEl);
@@ -1699,7 +1700,6 @@ $(function(){
     for (var param in utmParams) {
       addFormElem(param, utmParams[param]);
 	  console.log(param);
-	  console.log(utmParams[param]);
     }
   });
 </script>

@@ -1494,7 +1494,7 @@ $(function(){
 				popupTipoUsuario()
 			}
 
-			if(getCookie("mailUsuarioWinik") == "" && getCookie("usuarioWinik") == "" && !checkMobile())
+			if(getCookie("mailUsuarioWinik") == "" && getCookie("usuarioWinik") == "" && !checkMobile() && getCookie("tipoUsuario") != "")
 				setTimeout(popup, 30000);
 		
 			$('.flexslider').flexslider({

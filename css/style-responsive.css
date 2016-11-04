@@ -174,7 +174,7 @@ ul.how-it-works-col li:first-child .how-it-works-info:after,
 ul.how-it-works-col li:nth-child(2) .how-it-works-info:after{-webkit-transform:none;-ms-transform:none;transform:none;}
 ul.how-it-works-col li:first-child .how-it-works-info:after,
 ul.how-it-works-col li:nth-child(2) .how-it-works-info:after{display:none;}
-.the-feature{text-align:center;}
+.the-feature{text-align:center !important;}
 .the-feature.zero-bottom{margin-bottom:53px !important;}
 .feature-icon{font-size:48px;}
 .counter-title{margin-bottom:68px;}

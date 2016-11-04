@@ -3344,6 +3344,10 @@ td {
     a.menu-toggle{
         padding: 5px 0;
     }
+
+    .no-mobile{
+        display: none;
+    }
 }
 
 .boton-play {

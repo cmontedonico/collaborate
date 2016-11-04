@@ -3326,6 +3326,20 @@ td {
         margin-left: 0;
         width: 100%;
     }
+    #left-div-home .inline-cta{
+        margin: 0 10px;
+    }
+    #left-div-home .inline-cta .form-control{
+        width: 100%;
+    }
+
+    #left-div-home .inline-cta #crear_empresa{
+        width:100%;
+    }
+
+    #request_demo{
+        width:100%;
+    }
 }
 
 .boton-play {

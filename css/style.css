@@ -3877,3 +3877,18 @@ td {
     text-align:left; 
     padding: 20px 30px;
 }
+
+.safari{
+    top: none !important;
+  -webkit-transform: none !important;
+  -ms-transform:none !important;
+  transform: none!important;
+}
+
+.safari2{
+    margin-top: 15%;
+    top: none !important;
+  -webkit-transform: none !important;
+  -ms-transform:none !important;
+  transform: none!important;
+}

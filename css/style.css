@@ -3646,15 +3646,21 @@ td {
 
 #accesoClientes{
     display: inline-block;
-    margin-top: 9px;
+    margin-top: 11px;
     margin-right:10px !important;
     padding: 5px 5px;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 5px;
-    color: #fff;
+    border: solid 1px;
+    color: #777;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
+    line-height: 1;
+}
+
+#accesoClientes:hover{
+    color: #fff;
     background: #e74260;
 }
 
@@ -3790,6 +3796,11 @@ td {
     border-radius: 5px;
     text-transform: uppercase;
     border:none;
+}
+
+.clear .button:hover{
+    color: #e74260;
+    background: #fff;
 }
 
 .indicates-required{

@@ -32,12 +32,11 @@ $apikey = 'ef86aba4178244b88de8f2389923d102-us13';
 
 // The data to send to the API
 $postData = json_encode([ 
-        'email_address' => $_GET['email'],
+        'email_address' => $_GET['EMAIL'],
         'status' => "subscribed",
         'merge_fields' => [
         'CMPNY' => $_GET['CMPNY'], 
         'CNAME' => $_GET['CNAME'],
-        'EMAIL' => $_GET['EMAIL'],
         'PHONE' => $_GET['PHONE'],
         'USOURCE' => $_GET['USOURCE'],
         'UMEDIUM' => $_GET['UMEDIUM']
@@ -46,7 +45,6 @@ $postData = json_encode([
 // Setup cURL
 
 $ch = curl_init('https://us13.api.mailchimp.com/3.0/lists/'.$list_id.'/members/');
-echo 'https://us13.api.mailchimp.com/3.0/lists/'.$list_id.'/members/';
 curl_setopt_array($ch, array(
     CURLOPT_POST => TRUE,
     CURLOPT_RETURNTRANSFER => TRUE,
@@ -58,15 +56,18 @@ curl_setopt_array($ch, array(
 // Send the request
 $response = curl_exec($ch);
 
-// Check for errors
-if($response === FALSE){
-    die(curl_error($ch));
-}
 
-// Decode the response
-$responseData = json_decode($response, TRUE);
+$resultStatus = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+if ($resultStatus == 200) {
+        // everything went better than expected
+        echo ("exito");
+} else {
+        // the request did not complete as expected. common errors are 4xx
+        // (not found, bad request, etc.) and 5xx (usually concerning
+        // errors/exceptions in the remote script execution)
 
-// Print the date from the response
-echo $responseData['published'];
+echo('Request failed: HTTP status code: ' . $resultStatus);
+echo $response;
+    }
 
 ?>

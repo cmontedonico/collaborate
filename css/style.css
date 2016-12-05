@@ -3644,11 +3644,11 @@ td {
     transition: all 0.3s;
 }
 
-#accesoClientes{
+.accesoClientes{
     display: inline-block;
     margin-top: 11px;
     margin-right:10px !important;
-    padding: 5px 5px;
+    padding: 5px 5px !important;
     -webkit-border-radius: 25px;
     -moz-border-radius: 25px;
     border-radius: 5px;
@@ -3659,12 +3659,12 @@ td {
     line-height: 1;
 }
 
-#accesoClientes:hover{
-    color: #fff;
-    background: #e74260;
+.accesoClientes:hover{
+    color: #fff !important;
+    background: #e74260 !important;
 }
 
-.header-clone #accesoClientes{
+.header-clone .accesoClientes{
     padding: 3px 5px !important;
 }
 

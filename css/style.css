@@ -3903,3 +3903,7 @@ td {
   -ms-transform:none !important;
   transform: none!important;
 }
+
+.mc-field-group .error{
+    border: solid 1px #ff0000 !important;
+}

@@ -27,7 +27,7 @@
 */
 
 // Your ID and token
-$list_id = "b51deba1bc";
+$list_id = "ce183e70ab";
 $apikey = 'ef86aba4178244b88de8f2389923d102-us13';
 
 // The data to send to the API
@@ -39,7 +39,8 @@ $postData = json_encode([
         'CNAME' => $_GET['CNAME'],
         'EMAIL' => $_GET['email'],
         'PHONE' => $_GET['PHONE'],
-        'CONTADOR' => $_GET['CONTADOR']
+        'USOURCE' => $_GET['USOURCE'],
+        'UMEDIUM' => $_GET['UMEDIUM']
 ]
     ]);
 // Setup cURL

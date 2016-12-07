@@ -1145,7 +1145,7 @@ $(function(){
         		type: "GET",
         		url: theUrl,
         		success     : function(data) {
-            if (data.result != "exito") {
+            if (data != "exito") {
                 console.log(data);
 				$("#error-notification").show();
             } else {

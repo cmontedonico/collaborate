@@ -659,7 +659,7 @@
 		=================================
 		-->
 	<div class="contact-overlay overlay-scale">
-		<a class="overlay-close">Close</a>
+		<a id="overlay-cerrar" class="overlay-close">Close</a>
 
 		<div class="container">
 
@@ -1151,6 +1151,8 @@ $(function(){
             } else {
                 console.log("exito");
 				$("#success-notification").show();
+				$("#overlay-cerrar").click();
+
             }
         }
     });

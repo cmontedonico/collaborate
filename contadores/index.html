@@ -674,7 +674,7 @@
 					<!-- BEGIN Contact Form -->
 					<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
 
-						<form class="contact-form" id="contact-form" action="http://winik.us13.list-manage.com/subscribe/post?u=e8bc809b99cbc94b04c041189&amp;id=aa59fa6509" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+						<form class="contact-form" id="contact-form-contadores" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
 							<div class="row">
 
@@ -710,6 +710,8 @@
 								<div class="col-lg-12 col-md-12">
 									<div class="required-field">
 										<input name="PHONE" id="mce-PHONE" class="contact-input" type="tel" placeholder="Tel&eacute;fono">
+										<input type="hidden" name="USOURCE" class="required" value="" id="mce-USOURCE">
+										<input type="hidden" name="UMEDIUM" class="required" value="" id="mce-UMEDIUM">
 									</div>
 								</div>
 
@@ -1004,6 +1006,184 @@ $(function(){
 	</script>
 -->
 	</script>
+<script>
+	$("#contact-form-contadores").on("submit", function(event){
+		event.preventDefault();
+		despacho=$("#mce-DSPCHO").val();
+		nombre=$("#mce-CNAME").val();
+		email=$("#mce-EMAIL").val();
+		telefono=$("#mce-PHONE").val();
+		mmerge9=$("#mce-MMERGE9").val();
+		mmerge12=$("#mce-MMERGE12").val();
+		mmerge13=$("#mce-MMERGE13").val();
+		mmerge10=$("#mce-MMERGE10").val();
+		mmerge11=$("#mce-MMERGE11").val();
+		mmerge14_0=$("#mce-MMERGE14-0").prop("checked");
+		mmerge14_1=$("#mce-MMERGE14-1").prop("checked");
+		mmerge15=$("#mce-MMERGE15").val();
+		mmerge7=$("#mce-MMERGE7").val();
+		mmerge16=$("#mce-MMERGE16").val();
+		source=$("#mce-USOURCE").val();
+		medium=$("#mce-UMEDIUM").val();
+		
+		mmerge14="";
+		if(mmerge14_0){
+			mmerge14= "Si";
+		}
+		if(mmerge14_1){
+			mmerge14="No";
+		}
+
+		if(despacho == ""){
+			$("#mce-DSPCHO").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-DSPCHO").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(nombre == ""){
+			$("#mce-CNAME").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-CNAME").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(!validateEmail(email)){
+			$("#mce-EMAIL").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-EMAIL").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(telefono.length < 10){
+			$("#mce-PHONE").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-PHONE").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge9 == ""){
+			$("#mce-MMERGE9").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE9").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge10 == ""){
+			$("#mce-MMERGE10").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE10").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge11 == ""){
+			$("#mce-MMERGE11").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE11").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge12 == ""){
+			$("#mce-MMERGE12").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE12").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge13 == ""){
+			$("#mce-MMERGE13").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE13").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge14 == ""){
+			$("#mce-MMERGE14-1").parent().parent().parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE14-1").parent().parent().parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge15 == ""){
+			$("#mce-MMERGE15").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE15").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge16 == ""){
+			$("#mce-MMERGE16").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE16").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+		if(mmerge7 == ""){
+			$("#mce-MMERGE7").parent().addClass("field-error");
+			$("#error-notification").show();
+		}
+		else{
+			$("#mce-MMERGE7").parent().removeClass("field-error");
+			$("#error-notification").hide();
+		}
+
+		if(!$("#error-notification").is(":visible")){
+			theUrl="http://winik.mx/contadores/mailchimp.php?CNAME="+nombre+"&DSPCHO="+despacho+"&EMAIL="+email+"&PHONE="+telefono+"&MMERGE9="+mmerge9+	"&MMERGE12="+mmerge12+	"&MMERGE13="+mmerge13+	"&MMERGE10="+mmerge10+	"&MMERGE11="+mmerge11+	"&MMERGE14="+mmerge14+	"&MMERGE15=" +mmerge15+	"&MMERGE7="+mmerge7+	"&MMERGE16="+mmerge16+	"&USOURCE="+source+	"&UMEDIUM="+medium;
+			$.ajax({
+        		type: "GET",
+        		url: theUrl,
+        		success     : function(data) {
+            if (data.result != "exito") {
+                console.log(data);
+				$("#error-notification").show();
+            } else {
+                console.log("exito");
+				$("#success-notification").show();
+            }
+        }
+    });
+		$("#mce-DSPCHO").val("");
+		$("#mce-CNAME").val("");
+		$("#mce-EMAIL").val("");
+		$("#mce-PHONE").val("");
+		$("#mce-MMERGE9").val("");
+		$("#mce-MMERGE12").val("");
+		$("#mce-MMERGE13").val("");
+		$("#mce-MMERGE10").val("");
+		$("#mce-MMERGE11").val("");
+		$("#mce-MMERGE14-0").prop("checked",false);
+		$("#mce-MMERGE14-1").prop("checked",false);
+		$("#mce-MMERGE15").val("");
+		$("#mce-MMERGE7").val("");
+		$("#mce-MMERGE16").val("");
+		$("#mce-USOURCE").val("");
+		$("#mce-UMEDIUM").val("");
+		}
+		else{
+			$("#error-notification").show();
+		}
+		
+	});
+	function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+};
+	</script>
+
+
+
 
 	<script type="text/javascript">
 		$(window).load(function() {
@@ -1120,27 +1300,9 @@ $(function(){
   }
 
   $(document).ready(function () {
-    function addFormElem(paramName, fieldName) {
-      var paramValue = getParameterByName(paramName);
-	  console.log(paramValue);
-      var $utmEl = $("<input type='hidden' name='" + fieldName + "' value='" + paramValue + "'>");
-      if (paramValue != "") {
-        $("form").first().prepend($utmEl);
-      }
-    }
-
-    // Note: Only change the values after ":" if they are different for you
-    // They are the same one as you added in your email marketing provider
-    var utmParams = {
-      "utm_source"   : "USOURCE",
-      "utm_medium"   : "UMEDIUM",
-    };
-
-    for (var param in utmParams) {
-      addFormElem(param, utmParams[param]);
-	  console.log(param);
-	  
-    }
+	  $("#mce-USOURCE").val(getParameterByName("utm_source"));
+	  $("#mce-UMEDIUM").val(getParameterByName("utm_medium"));
+    
   });
 </script>
 </body>

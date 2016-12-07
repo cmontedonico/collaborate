@@ -1157,7 +1157,7 @@ a.overlay-close:hover {
     display: block;
     width: 20px;
     height: 20px;
-    background: #e74260;
+    
     content: "";
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -1253,6 +1253,8 @@ a.overlay-close:hover {
 #error-notification,
 #subscribe-error-notification,
 #hero-error-notification {
+    display: none;
+    margin-top: 135px;
     background: #cc3530;
     color: rgba(250, 251, 255, 0.95);
 }
@@ -1266,7 +1268,9 @@ a.overlay-close:hover {
 #success-notification,
 #subscribe-success-notification,
 #hero-success-notification {
-    background: #e74260;
+    display: none;
+    margin-top: 135px;
+    background: #5FAE57;
     color: rgba(250, 251, 255, 0.95);
 }
 

@@ -3911,9 +3911,9 @@ td {
 }
 
 #soy_contador{
-    margin-top: 4px;
+    margin-top: 4px !important;
     font-size: 14px !important;
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 
 @media screen and (max-width:400px) {

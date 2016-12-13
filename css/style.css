@@ -3910,7 +3910,7 @@ td {
     border: solid 1px #ff0000 !important;
 }
 
-#soy_contador{
+.soy_contador{
     margin-top: 4px !important;
     font-size: 14px !important;
     margin-right: 10px !important;

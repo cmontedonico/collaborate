@@ -3506,6 +3506,8 @@ td {
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
     }
+
+    
 }
 ::selection {
     color: #fff;
@@ -3906,4 +3908,21 @@ td {
 
 .mc-field-group .error{
     border: solid 1px #ff0000 !important;
+}
+
+#soy_contador{
+    margin-top: 4px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:400px) {
+    a.logo{
+        margin-left: -10px !important;
+    }
+    
+    a.menu-toggle{
+        margin-right: -10px !important;
+    }
+
 }

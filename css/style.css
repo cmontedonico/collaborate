@@ -3912,7 +3912,7 @@ td {
 
 #soy_contador{
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 14px !important;
     margin-right: 10px;
 }
 

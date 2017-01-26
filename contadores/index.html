@@ -1302,9 +1302,14 @@ $(function(){
   }
 
   $(document).ready(function () {
-	  $("#mce-USOURCE").val(getParameterByName("utm_source"));
-	  $("#mce-UMEDIUM").val(getParameterByName("utm_medium"));
-    
+	  if(getParameterByName("gclid")==""){
+	  document.getElementById("mce-USOURCE").value = getParameterByName("utm_source");
+	  document.getElementById("mce-UMEDIUM").value = getParameterByName("utm_medium");
+	  }
+	  else{
+		document.getElementById("mce-USOURCE").value = "google";
+	  	document.getElementById("mce-UMEDIUM").value = "cpc";
+	  }
   });
 </script>
 </body>

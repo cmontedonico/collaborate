@@ -1770,9 +1770,14 @@ $(function(){
 
   $(document).ready(function () {
 	  listenWidth();
+	  if(getParameterByName("gclid")==""){
 	  document.getElementById("mce-USOURCE").value = getParameterByName("utm_source");
 	  document.getElementById("mce-UMEDIUM").value = getParameterByName("utm_medium");
-	  
+	  }
+	  else{
+		document.getElementById("mce-USOURCE").value = "google";
+	  	document.getElementById("mce-UMEDIUM").value = "cpc";
+	  }
     // Note: Only change the values after ":" if they are different for you
     // They are the same one as you added in your email marketing provider
     var utmParams = {
